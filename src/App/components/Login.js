@@ -2,20 +2,14 @@ import { useState } from "react";
 import { FilledButton, LinkButton } from "./Buttons";
 import '../styles/components.css';
 import LoginIllustration from '../illustrations/Login.png';
-import Modal from "./Modals";
 
 const Login = () => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [isFocused, setIsFocused] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
-    
-    const handleClose = () => {
-        setIsOpen(false);
-      };
 
     const handleSubmit = () => {
-        setIsOpen(true);
+        
     };
 
     return(
@@ -43,7 +37,6 @@ const Login = () => {
                             <span style={{textAlign: "center"}}>Don't have an account? <LinkButton buttonText='Sign up' buttonLink='/register' /></span>
                         </div>
                     </form>
-                    {isOpen && <Modal isOpen={isOpen} onClose={handleClose} modalTitle='Ei saa' modalText='Here we go!' />}
                 </section>
             </div>
         </div>

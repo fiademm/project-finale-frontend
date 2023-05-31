@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Modal } from 'react-overlays';
 
-const Modal = (props, {isOpen, onClose}) => {
+const CustomModal = ({isOpen, onClose, modalText, modalTitle}) => {
     return(
         <div style={{
             position: "fixed",
@@ -13,12 +14,36 @@ const Modal = (props, {isOpen, onClose}) => {
             display: isOpen ? "block" : "none",
           }}>
             <div style={{ padding: '10px'}}>
-                <h2>{props.modalTitle}</h2>
-                <p>{props.modalText}</p>
+                <h2>{modalTitle}</h2>
+                <p>{modalText}</p>
                 <button onClick={onClose}>Close</button>
             </div>
         </div>
     );
 };
 
-export default Modal;
+const Overlay = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleOpen = () => {
+        setIsOpen(true);
+    };
+
+    const handleClose = () => {
+        setIsOpen(false);
+    };
+
+    return(
+        <div>
+            <button onClick={handleOpen}>Open Overlay</button>
+            {isOpen && <Modal isOpen={isOpen} onClose={handleClose}>
+            <div>
+                <h2>This is an overlay</h2>
+                <p>You can close it by clicking anywhere on the screen outside of this box.</p>
+            </div>
+            </ Modal>}
+       </div>
+    );
+}
+
+export { CustomModal, Overlay };
