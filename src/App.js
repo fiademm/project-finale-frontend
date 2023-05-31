@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Error404 from './App/components/Error404';
+import Error500 from './App/components/Error500';
+import LandingPage from './App/components/LandingPage';
+import LectureVideo from './App/components/LectureVideo';
+import Login from './App/components/Login';
+import Register from './App/components/Register';
+import './App/styles/general.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        <Routes>
+          <Route path='/' element={<LandingPage />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/register' element={<Register />}></Route>
+          <Route path='/video' element={<LectureVideo />}></Route>
+          <Route path='/404' element={<Error404 />}></Route>
+          <Route path='/500' element={<Error500 />}></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
