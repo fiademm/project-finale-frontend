@@ -1,4 +1,5 @@
 import './App.css';
+import AvailableCourses from './App/components/AvailableCourses';
 import Error404 from './App/components/Error404';
 import Error500 from './App/components/Error500';
 import LandingPage from './App/components/LandingPage';
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<LandingPage />}></Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/register' element={<Register />}></Route>
+          <Route path='/courses' element={<AvailableCourses />}></Route>
           <Route path='/video' element={<LectureVideo />}></Route>
           <Route path='/404' element={<Error404 />}></Route>
           <Route path='/500' element={<Error500 />}></Route>
