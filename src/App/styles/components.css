@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .header-container {
     background-color: transparent;
     color: #555555;
@@ -99,9 +103,26 @@
     border-bottom: 0.10vw solid #ccc;
 }
 
-.tab-button-active {
-    background-color: #fafafa;
-    color: #172D42;
+.tab-button:hover, .active-tab-button:hover {
+    color: #1f4e79;
+}
+
+.tab-button:visited, .active-tab-button:visited {
+    color: #1f4e79;
+}
+
+.active-tab-button {
+    background-color: transparent;
+    width: 100%;
+    padding: 0.6vw 0vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.2s;
+    font-family: 'Jost-Medium';
+    font-size: 0.96vw;
+    border: none;
     cursor: pointer;
     border-bottom: 0.18vw solid #172D42;
 }
