@@ -2,6 +2,10 @@ import React from 'react';
 import { TabThree } from '../Tabs';
 import { FooterAfterLogin } from '../Footers';
 import { HeaderAfterLogin } from '../Headers';
+import CourseCard from '../CouseCard';
+import axios from 'axios';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 const WebPath = () => {
     const [courses, setCourses] = useState([]);

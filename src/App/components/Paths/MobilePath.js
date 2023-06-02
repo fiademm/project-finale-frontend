@@ -2,6 +2,10 @@ import React from 'react';
 import { TabTwo } from '../Tabs';
 import { HeaderAfterLogin } from '../Headers';
 import { FooterAfterLogin } from '../Footers';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import axios from 'axios';
+import CourseCard from '../CouseCard';
 
 const MobilePath = () => {
     const [courses, setCourses] = useState([]);
