@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 const FilledButton = (props) => {
@@ -29,4 +29,24 @@ const LinkButton = (props) => {
     );
 }
 
-export { FilledButton, OutlinedButton, LinkButton }
+const TabButton = (props) => {
+    return (
+      <>
+        <Link to={props.buttonLink} className='tab-button' >
+          {props.buttonText}
+        </Link>
+      </>
+    );
+  }
+
+  const ActiveTabButton = (props) => {
+    return (
+      <>
+        <Link to={props.buttonLink} className='active-tab-button' >
+          {props.buttonText}
+        </Link>
+      </>
+    );
+  }
+
+export { FilledButton, OutlinedButton, LinkButton, TabButton, ActiveTabButton }
