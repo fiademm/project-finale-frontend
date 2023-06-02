@@ -2,14 +2,23 @@ import { useState } from "react";
 import { FilledButton, LinkButton } from "./Buttons";
 import '../styles/components.css';
 import LoginIllustration from '../illustrations/Login.png';
+import axios from "axios";
 
 const Login = () => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [isFocused, setIsFocused] = useState(false);
 
-    const handleSubmit = () => {
-        
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await axios.post('/users/login', { email, password });
+            localStorage.setItem('token', response.data.token);
+            window.location.href = '/courses'; // redirect user to the courses page on successful login
+        } catch (error) {
+            console.error(error);
+            alert('Invalid email or password');
+        }
     };
 
     return(
@@ -28,7 +37,7 @@ const Login = () => {
                             </label>
                             <label htmlFor="">
                                 Password:
-                                <input className="textbox" type="text" value={password} onChange={(event) => setPassword(event.target.value)} onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)} style={{background: isFocused ? "transparent" : "transparent", color: isFocused ? "black" : "black",}} />
+                                <input className="textbox" type="password" value={password} onChange={(event) => setPassword(event.target.value)} onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)} style={{background: isFocused ? "transparent" : "transparent", color: isFocused ? "black" : "black",}} />
                             </label>
                         </section>
                         <FilledButton buttonText='Login' buttonLink='/404' buttonOnClick={handleSubmit} />
