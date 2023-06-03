@@ -1,0 +1,61 @@
+/* HeadNav.css */
+.navbar {
+    position: sticky;
+        padding: 10px 17px; 
+      }
+      
+      .navbar-nav {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center
+      }
+      
+      .nav-item {
+        margin-left: 21px;
+      }
+    
+      .nav-item:first-child {
+        margin-right: auto; /* Pushes "Zillions" to the left */
+      }
+      
+      .nav-link {
+        text-decoration: none;
+        color: #333;
+        padding: 5px;
+        font-size: 18px;
+        font-family: 'Jost', sans-serif; /* Apply Jost font style */
+      }
+    
+      .get-started-button {
+        padding: 8px 10px;
+        font-size: 18px;
+        font-family: 'Jost', sans-serif; /* Apply Cinzel font style */
+        background-color: #333333;
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+      .get-started-button:hover{
+        background-color:  #FFD700;
+        color: #333333;
+        border: 1px solid #fff;
+      }
+      .zillions-link {
+        text-decoration: none;
+        color: #333;
+        padding: 5px;
+        font-size: 32px;
+        font-weight: bolder;
+        font-family: 'Cinzel', serif; /* Apply Cinzel font style */
+      }
+      
+      .nav-link:hover {
+        background-color: #FFD700;
+        border-radius: 4px;
+        padding: 5px 
+      }
+      .nav-item:nth-child(5),
+      .nav-item:nth-child(7) {
+       margin-left: auto;
+    }
