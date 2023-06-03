@@ -39,15 +39,13 @@ function Tutorial() {
       <Card.Header>
         <Nav variant="pills" defaultActiveKey="#first">
           <Nav.Item>
-            <Nav.Link href="#first"> Courses Catalog</Nav.Link>
+            <Nav.Link href="tutorial"> Courses Catalog </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link href="courseprogress">In Progress</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="#disabled" disabled>
-              Completed
-            </Nav.Link>
+             <Nav.Link href="complete"> Completed </Nav.Link>
           </Nav.Item>
         </Nav>
       </Card.Header>

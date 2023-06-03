@@ -10,7 +10,7 @@ import './App/styles/general.css';
 import Categories from './App/components/Categories';
 import Tutorial from './App/components/Tutorial';
 import CourseProgress from './App/components/CourseProgress';
-
+import Complete from './App/components/Complete'
 
 function App() {
   return (
@@ -20,9 +20,11 @@ function App() {
           <Route path='/' element={<LandingPage />}></Route>
             <Route path='/' element={<LandingPage />}></Route>
           <Route path='/categories' element={<Categories />}></Route>
+          <Route path='/categories' element={<CourseProgress />}></Route>
           <Route path='/login' element={<Login />}></Route>
            <Route path='/register' element={<Register />}></Route>
           <Route path='/tutorial' element={<Tutorial />}></Route>
+          <Route path='/complete' element={<Complete />}></Route>
            <Route path='/courseprogress' element={<CourseProgress />}></Route>
           <Route path='/404' element={<Error404 />}></Route>
           <Route path='/500' element={<Error500 />}></Route>
