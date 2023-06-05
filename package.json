@@ -11,6 +11,7 @@
     "react-dom": "^18.2.0",
     "react-native-progress-bar-horizontal": "^1.0.1",
     "react-overlays": "^5.2.1",
+    "react-player": "^2.12.0",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
