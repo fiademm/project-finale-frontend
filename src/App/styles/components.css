@@ -258,3 +258,39 @@ a {
 .component-container {
     padding: 1.2vw 16vw;
 }
+
+.courses-component-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6vw;
+}
+
+.courses-display {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6vw;
+}
+
+/* styles for course card component */
+.course-card-container {
+    border: 0.16vw solid black;
+    border-radius: 0.4vw;
+    width: 100%;
+    padding: 2vw 3vw;
+}
+
+.div-one {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.title-and-description > .course-title {
+    font-family: 'Jost-Medium';
+    font-size: 1.1vw;
+}
+
+.div-two {
+    display: flex;
+    flex-direction: column;
+}

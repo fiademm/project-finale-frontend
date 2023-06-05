@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('/users/login', { email, password });
+            const response = await axios.post('http://localhost:5000/users/login', { email, password });
             localStorage.setItem('token', response.data.token);
             window.location.href = '/courses'; // redirect user to the courses page on successful login
         } catch (error) {
@@ -40,7 +40,7 @@ const Login = () => {
                                 <input className="textbox" type="password" value={password} onChange={(event) => setPassword(event.target.value)} onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)} style={{background: isFocused ? "transparent" : "transparent", color: isFocused ? "black" : "black",}} />
                             </label>
                         </section>
-                        <FilledButton buttonText='Login' buttonLink='/404' buttonOnClick={handleSubmit} />
+                        <FilledButton buttonText='Login' buttonLink='' buttonOnClick={handleSubmit} />
                         <div style={{display: 'flex', flexDirection: 'column', gap: '1.2vw'}}>
                             <hr />
                             <span style={{textAlign: "center"}}>Don't have an account? <LinkButton buttonText='Sign up' buttonLink='/register' /></span>
