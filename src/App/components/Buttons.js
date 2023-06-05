@@ -14,7 +14,7 @@ const FilledButton = (props) => {
 const OutlinedButton = (props) => {
     return(
         <>
-            <button className='outlined-button'>{props.buttonText}</button>
+            <button className='outlined-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
         </>
     );
 }
