@@ -28,9 +28,11 @@ const DesignPath = () => {
             <section className="component-container">
                 <section className='courses-component-container'>
                     <TabOne />
-                    {courses.map((course) => (
-                        <CourseCard key={course.id} course={course} />
-                    ))}
+                    <div className="courses-display">
+                        {courses.map((course) => (
+                            <CourseCard key={course.id} course={course} />
+                        ))}
+                    </div>
                 </section>
             </section>
             <FooterAfterLogin />
