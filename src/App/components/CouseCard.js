@@ -29,6 +29,8 @@
 
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import '../styles/components.css';
+import { FilledButton } from './Buttons';
 
 function CourseCard({ course }) {
   const [isEnrolled, setIsEnrolled] = useState(false);
@@ -62,13 +64,33 @@ function CourseCard({ course }) {
   }, []);
 
   return (
-    <div>
-      <h2>{course.title}</h2>
-      <p>{course.description}</p>
-      <img src={course.thumbnail_url} alt={`Thumbnail for ${course.title}`} />
-      {!isEnrolled && <button onClick={handleEnroll}>Enroll</button>}
+    <div className='course-card-container'>
+      <div className="div-one">
+        <div className="title-and-description">
+          <span className='course-title'>{course.title}</span>
+          <span className='course-description'>{course.description}</span>
+        </div>
+        <div className="buttons">{!isEnrolled && <FilledButton buttonText='Start learning' buttonLink='' buttonOnClick={handleEnroll} />} </div>
+      </div>
+      <div className="div-two">
+        <span>{!isEnrolled && <span>Not started</span>}
+        {isEnrolled ? (
+          <div>
+            <span>started</span>
+            <span>started</span>
+          </div>
+        ) : (
+          <div>
+            <span>not started</span>
+            <span>not started</span>
+          </div>
+        )}
+        </span>
+      </div>
+      {/* <img src={course.thumbnail_url} alt={`Thumbnail for ${course.title}`} /> */}
+      
     </div>
   );
 }
 
-export default CourseCard;
+export default CourseCard; 
