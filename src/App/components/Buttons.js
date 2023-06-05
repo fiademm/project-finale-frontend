@@ -11,12 +11,30 @@ const FilledButton = (props) => {
     );
 }
 
+const FilledButton1 = (props) => {
+  return(
+      <>
+          <Link to={props.buttonLink}>
+              <button className='filled-button-1' onClick={props.buttonOnClick}>{props.buttonText}</button>
+          </Link>
+      </>
+  );
+}
+
 const OutlinedButton = (props) => {
     return(
         <>
             <button className='outlined-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
         </>
     );
+}
+
+const OutlinedButton1 = (props) => {
+  return(
+      <>
+          <button className='outlined-button-1' onClick={props.buttonOnClick}>{props.buttonText}</button>
+      </>
+  );
 }
 
 const LinkButton = (props) => {
@@ -49,4 +67,4 @@ const TabButton = (props) => {
     );
   }
 
-export { FilledButton, OutlinedButton, LinkButton, TabButton, ActiveTabButton }
+export { FilledButton, FilledButton1, OutlinedButton, OutlinedButton1, LinkButton, TabButton, ActiveTabButton }

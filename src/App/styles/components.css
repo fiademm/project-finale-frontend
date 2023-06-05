@@ -61,6 +61,19 @@ a {
     height: 100%;
 }
 
+.filled-button-1 {
+    box-shadow: none;
+    border-color: transparent;
+    font-family: 'Jost-Medium';
+    background-color: #1f4e79;
+    padding: 0.4vw 1.2vw;
+    border-radius: 0.2vw;
+    color: #fafafa;
+    font-size: 0.76vw;
+    width: 100%;
+    height: 100%;
+}
+
 .outlined-button {
     background-color: transparent;
     font-family: 'Jost-SemiBold';
@@ -69,6 +82,17 @@ a {
     border-radius: 0.16vw;
     color: #1f4e79;
     font-size: 0.83vw;
+    box-shadow: none;
+}
+
+.outlined-button-1 {
+    background-color: transparent;
+    font-family: 'Jost-Medium';
+    border-color: #1f4e79;
+    padding: 0.6vw 3vw;
+    border-radius: 0.16vw;
+    color: #1f4e79;
+    font-size: 0.76vw;
     box-shadow: none;
 }
 
@@ -273,16 +297,35 @@ a {
 
 /* styles for course card component */
 .course-card-container {
-    border: 0.16vw solid black;
+    border: 0.16vw solid #e0e0e0;
     border-radius: 0.4vw;
     width: 100%;
-    padding: 2vw 3vw;
-}
-
-.div-one {
+    height: 14vw;
     display: flex;
     flex-direction: row;
+    gap: 3vw;
+}
 
+.course-image-container {
+    height: 100%;
+}
+
+.course-image {
+    width: 20vw;
+    height: 100%
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.4vw 0;
+}
+
+.title-and-description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 .title-and-description > .course-title {
@@ -290,7 +333,23 @@ a {
     font-size: 1.1vw;
 }
 
-.div-two {
+.title-and-description > .course-description {
+    font-family: 'Jost-Regular';
+    font-size: 0.83vw;
+}
+
+/* .div-two {
     display: flex;
     flex-direction: column;
+} */
+
+.before-enrolled-buttons {
+    width: fit-content;
+}
+
+.after-enrolled-buttons {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
 }

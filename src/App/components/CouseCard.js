@@ -30,7 +30,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles/components.css';
-import { FilledButton } from './Buttons';
+import { FilledButton, FilledButton1, OutlinedButton1 } from './Buttons';
 
 function CourseCard({ course }) {
   const [isEnrolled, setIsEnrolled] = useState(false);
@@ -65,30 +65,32 @@ function CourseCard({ course }) {
 
   return (
     <div className='course-card-container'>
-      <div className="div-one">
+      <div className="course-image-container">
+        <img  className='course-image' src={course.thumbnail_url} alt={`Thumbnail for ${course.title}`} />
+      </div>
+      <div className="course-info">
         <div className="title-and-description">
           <span className='course-title'>{course.title}</span>
           <span className='course-description'>{course.description}</span>
         </div>
-        <div className="buttons">{!isEnrolled && <FilledButton buttonText='Start learning' buttonLink='' buttonOnClick={handleEnroll} />} </div>
-      </div>
-      <div className="div-two">
-        <span>{!isEnrolled && <span>Not started</span>}
-        {isEnrolled ? (
-          <div>
-            <span>started</span>
-            <span>started</span>
+        <div className="buttons">
+          {isEnrolled ? (
+          <div className='after-enrolled-buttons'>
+            <OutlinedButton1 buttonText='Course outline' buttonLink='' buttonOnClick='' />
+            <FilledButton1 buttonText='Resume learning' buttonLink='' buttonOnClick='' />
           </div>
         ) : (
-          <div>
-            <span>not started</span>
-            <span>not started</span>
+          <div className='before-enrolled-buttons'>
+            <FilledButton1 buttonText='Start learning' buttonLink='' buttonOnClick={handleEnroll} />
           </div>
         )}
-        </span>
+          </div>
       </div>
-      {/* <img src={course.thumbnail_url} alt={`Thumbnail for ${course.title}`} /> */}
-      
+      {/* <div className="div-two">
+        <span>
+          {!isEnrolled && <span>Not started, No progress</span>}
+        </span>
+      </div> */} 
     </div>
   );
 }
