@@ -11,6 +11,12 @@ import Categories from './App/components/Categories';
 import Tutorial from './App/components/Tutorial';
 import CourseProgress from './App/components/CourseProgress';
 import Complete from './App/components/Complete'
+import Courses from './App/components/Courses'
+import Web from './App/components/Web'
+import Mobile from './App/components/Mobile'
+import Section1 from './App/components/Section1'
+import Section2 from './App/components/Section2'
+
 
 function App() {
   return (
@@ -25,7 +31,13 @@ function App() {
            <Route path='/register' element={<Register />}></Route>
           <Route path='/tutorial' element={<Tutorial />}></Route>
           <Route path='/complete' element={<Complete />}></Route>
-           <Route path='/courseprogress' element={<CourseProgress />}></Route>
+          <Route path='/courseprogress' element={<CourseProgress />}></Route>
+          <Route path='/courses' element={<Courses />}></Route>
+          <Route path='/web' element={<Web />}></Route>
+          <Route path='/mobile' element={<Mobile />}></Route>
+          <Route path='/section1' element={<Section1/>}></Route>
+           <Route path='/section2' element={<Section2/>}></Route>
+           
           <Route path='/404' element={<Error404 />}></Route>
           <Route path='/500' element={<Error500 />}></Route>
         </Routes>

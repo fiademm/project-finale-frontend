@@ -8,43 +8,49 @@ import Col from 'react-bootstrap/Col';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 
-function Mobile() {
+function Web() {
     const course = [
         {
             id: 1,
             src: code,
-            name: 'Frontend Advanced',
+            name: 'Frontend Development',
             
-      },
+        },
+        {
+            id: 2,
+            src: code,
+            name: 'Backend Development',
+           
 
-              
+        },
     ]
   return (
 
     
      
-    <Card>
-      <h1 >My LEARNING</h1>
+      <Card>
+          <h1>Explore Courses</h1>
       <Card.Header>
-        <Nav variant="pills" defaultActiveKey="#courseprogress">
+        <Nav variant="pills" defaultActiveKey="#web">
           <Nav.Item>
-            <Nav.Link href="tutorial"> Courses Catalog</Nav.Link>
+            <Nav.Link href="courses"> UI Design </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="courseprogress">In Progress</Nav.Link>
+            <Nav.Link href="mobile">Mobile App Development</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-             <Nav.Link href="complete"> Completed </Nav.Link>
+             <Nav.Link href="web"> Web Development </Nav.Link>
           </Nav.Item>
         </Nav>
       </Card.Header>
-      <Container className='mt-5  container d-flex align-items-center justify-content-center vh-100"'>
-               <Row>
+      <Container className='mt-5 '>
+               <Row >
                 
                 {
                     course.map((book) =>
                     <Col md='4' className='mb-5'>
-                    <Card style={{ width: '20rem' }}>
+                        <Card style={{ width: '20rem' }}>
+                          
                     <Card.Img variant="right" src={book.src} />
                     <Card.Body>
                       <Card.Title>{book.name}</Card.Title>
@@ -52,20 +58,10 @@ function Mobile() {
                       {book.info}
                       </Card.Text>
                      
-                      <ProgressBar now={30} />
-                            <h6 className='mt-2'>30% Complete</h6>
-                            <div className="container">
-      <div className="row">
-        <div className="col">
-          <button className="btn btn-primary">Course Outline</button>
-        </div>
-        <div className="col">
-          <button className="btn btn-secondary ml-2">Resume learning</button>
-        </div>
-      </div>
-    </div>
-                     
-
+                      <ProgressBar now={0} />
+                      <h6 className='mt-2'>Not Started</h6>
+                      <Button className='mt-2' variant="primary">Start learning</Button>
+                                
                     </Card.Body>
                     </Card>
                     </Col>
@@ -82,4 +78,4 @@ function Mobile() {
   );
 }
 
-export default Mobile;
+export default Web;

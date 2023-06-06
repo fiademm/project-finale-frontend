@@ -79,15 +79,16 @@ function Categories() {
                <Row>
                 
                 {
-                    course.map((book,index) =>
-                    <Col md='6' className='mb-5'>
+                    course.map((book) =>
+                    <Col md='6' className='mb-5  col'>
                     <Card style={{ width: '34rem' }}>
-                    <Card.Img variant="top" src={book.src} />
+                                <Card.Img variant="top" src={book.src} />
+                                
                     <Card.Body>
                       <Card.Title>{book.name}</Card.Title>
                       <Card.Text>
                       <p>{book.info}</p>
-                      <li key={index}>{book.items}</li>
+                      <li>{book.items}</li>
                       </Card.Text>
                       <Button variant="primary">Enroll</Button>
                     </Card.Body>

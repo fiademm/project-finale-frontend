@@ -3,28 +3,24 @@ import Nav from 'react-bootstrap/Nav';
 import congrat from "./Images/CONGRAT.png";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/esm/Container';
+import { Pagination } from 'react-bootstrap';
 
 
-function Complete() {
+function Section1() {
     
     
   return (
-
+<div>
     
        
     <Card >
       <Card.Header>
-        <h1 >Explore Courses</h1>
+        
         <Nav variant="pills" defaultActiveKey="#complete">
           <Nav.Item>
-            <Nav.Link href="tutorial"> Courses Catalog</Nav.Link>
+            <Nav.Link >Section 1: Principles of Architecture</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="courseprogress">In Progress</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-             <Nav.Link href="complete"> Completed </Nav.Link>
-          </Nav.Item>
+         
         </Nav>
       </Card.Header>
     
@@ -38,14 +34,20 @@ function Complete() {
                      
                       
                       
-                      <Button className='mt-2' variant="primary">Explore the Catalog</Button>
+                      
                                     
                     </Card.Body>
       
-      
-                    </Card>
+       
+      </Card>
+      <Pagination className="justify-content-end mt-3 ">
+      <Pagination.Prev />
+      <Pagination.Next />
+    </Pagination>
+  
+      </div>
     
   );
 }
 
-export default Complete;
+export default Section1;
