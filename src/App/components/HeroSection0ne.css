@@ -67,5 +67,45 @@
     }
     
   
-    
+    /* Styles for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .hero-title {
+    margin-top: 40px;
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-button,
+  .hero-button-start,
+  .hero-button-browse {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+
   
