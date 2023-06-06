@@ -57,8 +57,8 @@
     }
   
     .hero-image {
-      width: 600px; /* Adjust the width as needed */
-      height: 450px; /* Maintain aspect ratio */
+      width: 300px; /* Adjust the width as needed */
+      height: 300px; /* Maintain aspect ratio */
       object-fit: cover; /* Adjust the image placement within the container */
       position: absolute;
       top: 55%;
