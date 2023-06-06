@@ -1,8 +1,12 @@
 import './App.css';
+import AvailableCourses from './App/components/AvailableCourses';
 import Error404 from './App/components/Error404';
 import Error500 from './App/components/Error500';
 import LandingPage from './App/components/LandingPage';
 import Login from './App/components/Login';
+import DesignPath from './App/components/Paths/DesignPath';
+import MobilePath from './App/components/Paths/MobilePath';
+import WebPath from './App/components/Paths/WebPath';
 import Register from './App/components/Register';
 import './App/styles/general.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -28,16 +32,7 @@ function App() {
           <Route path='/categories' element={<Categories />}></Route>
           <Route path='/categories' element={<CourseProgress />}></Route>
           <Route path='/login' element={<Login />}></Route>
-           <Route path='/register' element={<Register />}></Route>
-          <Route path='/tutorial' element={<Tutorial />}></Route>
-          <Route path='/complete' element={<Complete />}></Route>
-          <Route path='/courseprogress' element={<CourseProgress />}></Route>
-          <Route path='/courses' element={<Courses />}></Route>
-          <Route path='/web' element={<Web />}></Route>
-          <Route path='/mobile' element={<Mobile />}></Route>
-          <Route path='/section1' element={<Section1/>}></Route>
-           <Route path='/section2' element={<Section2/>}></Route>
-           
+          <Route path='/register' element={<Register />}></Route>
           <Route path='/404' element={<Error404 />}></Route>
           <Route path='/500' element={<Error500 />}></Route>
         </Routes>

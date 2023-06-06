@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 const FilledButton = (props) => {
@@ -11,12 +11,30 @@ const FilledButton = (props) => {
     );
 }
 
+const FilledButton1 = (props) => {
+  return(
+      <>
+          <Link to={props.buttonLink}>
+              <button className='filled-button-1' onClick={props.buttonOnClick}>{props.buttonText}</button>
+          </Link>
+      </>
+  );
+}
+
 const OutlinedButton = (props) => {
     return(
         <>
-            <button className='outlined-button'>{props.buttonText}</button>
+            <button className='outlined-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
         </>
     );
+}
+
+const OutlinedButton1 = (props) => {
+  return(
+      <>
+          <button className='outlined-button-1' onClick={props.buttonOnClick}>{props.buttonText}</button>
+      </>
+  );
 }
 
 const LinkButton = (props) => {
@@ -29,4 +47,24 @@ const LinkButton = (props) => {
     );
 }
 
-export { FilledButton, OutlinedButton, LinkButton }
+const TabButton = (props) => {
+    return (
+      <>
+        <Link to={props.buttonLink} className='tab-button' >
+          {props.buttonText}
+        </Link>
+      </>
+    );
+  }
+
+  const ActiveTabButton = (props) => {
+    return (
+      <>
+        <Link to={props.buttonLink} className='active-tab-button' >
+          {props.buttonText}
+        </Link>
+      </>
+    );
+  }
+
+export { FilledButton, FilledButton1, OutlinedButton, OutlinedButton1, LinkButton, TabButton, ActiveTabButton }
