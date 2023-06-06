@@ -9,15 +9,18 @@ import DesignPath from './App/components/Paths/DesignPath';
 import MobilePath from './App/components/Paths/MobilePath';
 import WebPath from './App/components/Paths/WebPath';
 import Register from './App/components/Register';
+import ExploreCourses from './App/components/ExploreCourses';
 import './App/styles/general.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
       <div className='App'>
         <Routes>
-          <Route path='/' element={<LandingPage />}></Route>
+          <Route path="/" element={<Navigate to="/explorecourses" />} />
+          <Route path="/explorecourses" element={<ExploreCourses />} />
+          <Route path='/landingpage' element={<LandingPage />}></Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/register' element={<Register />}></Route>
           <Route path='/designpath' element={<DesignPath />}></Route>
