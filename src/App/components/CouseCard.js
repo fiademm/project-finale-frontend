@@ -31,8 +31,10 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles/components.css';
 import { FilledButton, FilledButton1, OutlinedButton1 } from './Buttons';
+import { useNavigate } from 'react-router-dom';
 
 function CourseCard({ course }) {
+  const navigate = useNavigate();
   const [isEnrolled, setIsEnrolled] = useState(false);
 
   const handleEnroll = async () => {
@@ -63,6 +65,12 @@ function CourseCard({ course }) {
     checkEnrollmentStatus();
   }, []);
 
+  const handleStartLearning = () => {
+    const idNumber = course.id;
+    navigate('/details', {state: {idNumber},} );
+    console.log('The id number here is ' + idNumber);
+  };
+
   return (
     <div className='course-card-container'>
       <div className="course-image-container">
@@ -76,12 +84,12 @@ function CourseCard({ course }) {
         <div className="buttons">
           {isEnrolled ? (
           <div className='after-enrolled-buttons'>
-            <OutlinedButton1 buttonText='Course outline' buttonLink='' buttonOnClick='' />
-            <FilledButton1 buttonText='Resume learning' buttonLink='' buttonOnClick='' />
+            <OutlinedButton1 buttonText='Course outline' />
+            <FilledButton1 buttonText='Resume learning' buttonOnClick={handleStartLearning} />
           </div>
         ) : (
           <div className='before-enrolled-buttons'>
-            <FilledButton1 buttonText='Start learning' buttonLink='' buttonOnClick={handleEnroll} />
+            <FilledButton1 buttonText='Start learning' buttonOnClick={handleEnroll} />
           </div>
         )}
           </div>
