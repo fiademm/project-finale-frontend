@@ -7,21 +7,37 @@
       justify-content: space-between;
     }
     
-    .hero-title { 
-      margin-top: 70px;
+    .hero-title1 { 
+      margin-top: 62px;
       padding: 1px 14px;
       font-size: 48px;
       font-family: 'Cinzel',serif;
+      margin-left: -75px;
     }
     
-    .hero-title + .hero-title {
+    .hero-title2{
+      margin-top: 20px;
+      padding: 1px 14px;
+      font-size: 48px;
+      font-family: 'Cinzel',serif;
+      margin-left: 4px;
+    }
+    .hero-title1 + .hero-title2 {
       margin-top: 14px; /* Adjust the margin as needed */
     }
     
-    .hero-subtitle {
-      margin-top: 30px;
+    .hero-subtitle1 {
+      margin-top: 5px;
+      padding: 13px 12px;
+      font-size: 17px;
+      font-family: 'Jost',sans-serif;
+    }
+
+    
+    .hero-subtitle2 {
+      margin-top: -15px;
       padding: 15px 14px;
-      font-size: 24px;
+      font-size: 17px;
       font-family: 'Jost',sans-serif;
     }
     
@@ -43,7 +59,7 @@
     }
     
     .hero-button-start {
-    margin-left: 10px;
+      margin-left: -140px;
      padding: 15px 21px;
      font-size: 18px;
     }
@@ -57,55 +73,14 @@
     }
   
     .hero-image {
-      width: 300px; /* Adjust the width as needed */
-      height: 300px; /* Maintain aspect ratio */
+      width: 350px; /* Adjust the width as needed */
+      height: 350px; /* Maintain aspect ratio */
       object-fit: cover; /* Adjust the image placement within the container */
       position: absolute;
       top: 55%;
       right: 0;
-      transform: translate(-45%, -45%);
+      transform: translate(-15%, -55%);
     }
     
   
-    /* Styles for screens with a maximum width of 768px */
-@media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
 
-  .hero-title {
-    margin-top: 40px;
-    font-size: 36px;
-  }
-
-  .hero-subtitle {
-    margin-top: 20px;
-    font-size: 18px;
-  }
-
-  .hero-buttons {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero-button,
-  .hero-button-start,
-  .hero-button-browse {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .hero-image {
-    width: 100%;
-    height: auto;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-  }
-}
-
-  
