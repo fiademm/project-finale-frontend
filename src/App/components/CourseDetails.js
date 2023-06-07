@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import ReactPlayer from 'react-player';
+import { useLocation } from 'react-router-dom';
 
-function CourseDetails({ match }) {
+function CourseDetails() {
+  const location = useLocation();
+  const id = location.state.idNumber;
+  console.log('This is the id ' + id);
   const [course, setCourse] = useState(null);
   const [progress, setProgress] = useState(0);
 
@@ -12,7 +16,7 @@ function CourseDetails({ match }) {
     setProgress(newProgress);
     try {
       axios.post(
-        `/courses/${match.params.id}/progress`,
+        `/courses/${id}/progress`,
         { progress: newProgress },
         { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
       );
@@ -24,7 +28,8 @@ function CourseDetails({ match }) {
   useEffect(() => {
     const fetchCourse = async () => {
       try {
-        const response = await axios.get(`/courses/${match.params.id}`, {
+        const response = await axios.get(`/courses/${id}`, {
+          // use the course id from the useParams hook
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         });
         setCourse(response.data);
@@ -33,15 +38,17 @@ function CourseDetails({ match }) {
         console.error(error);
       }
     };
-    fetchCourse();
-  }, [match.params.id]);
+    if (id !== null) {
+      fetchCourse();
+    }
+  }, [id]); //  use the course id from the useParams hook as the dependency of the useEffect
 
   const handleProgress = async (event) => {
     const newProgress = Math.round(event.playedSeconds / event.duration * 100);
     setProgress(newProgress);
     try {
       await axios.post(
-        `/courses/${match.params.id}/progress`,
+        `/courses/${id}/progress`,
         { progress: newProgress },
         { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
       );
@@ -51,7 +58,7 @@ function CourseDetails({ match }) {
   };
 
   if (!course) {
-    return <div>Loading...</div>;
+    return <div>Loading... The id is {id} </div>;
   }
 
   return (
