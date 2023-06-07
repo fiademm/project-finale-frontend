@@ -38,7 +38,7 @@ function CourseCard({ course }) {
   const handleEnroll = async () => {
     try {
       await axios.post(
-        '/users/enroll',
+        'http://localhost:5000/users/enroll',
         { courseId: course.id },
         { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
       );
@@ -52,7 +52,7 @@ function CourseCard({ course }) {
   useEffect(() => {
     const checkEnrollmentStatus = async () => {
       try {
-        const response = await axios.get(`/courses/${course.id}`, {
+        const response = await axios.get(`http://localhost:5000/courses/${course.id}`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         });
         setIsEnrolled(true);
@@ -70,7 +70,7 @@ function CourseCard({ course }) {
       </div>
       <div className="course-info">
         <div className="title-and-description">
-          <span className='course-title'>{course.title}</span>
+          <span className='course-title'>{course.id}  {course.title}</span>
           <span className='course-description'>{course.description}</span>
         </div>
         <div className="buttons">

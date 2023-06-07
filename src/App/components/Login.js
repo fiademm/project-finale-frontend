@@ -14,7 +14,7 @@ const Login = () => {
         try {
             const response = await axios.post('http://localhost:5000/users/login', { email, password });
             localStorage.setItem('token', response.data.token);
-            window.location.href = '/courses'; // redirect user to the courses page on successful login
+            window.location.href = '/designpath'; // redirect user to the courses page on successful login
         } catch (error) {
             console.error(error);
             alert('Invalid email or password');

@@ -10,6 +10,7 @@ const AvailableCourses = () => {
             <section className="component-container">
                 <section className='courses-component-container'>
                     <TabOne />
+                    Desi
                 </section>
             </section>
             <FooterAfterLogin />
