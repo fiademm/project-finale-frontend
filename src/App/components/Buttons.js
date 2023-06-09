@@ -21,6 +21,14 @@ const FilledButton1 = (props) => {
   );
 }
 
+const FilledButton1Non = (props) => {
+  return(
+      <>
+          <button className='filled-button-1' onClick={props.buttonOnClick}>{props.buttonText}</button>
+      </>
+  );
+}
+
 const OutlinedButton = (props) => {
     return(
         <>
@@ -67,4 +75,4 @@ const TabButton = (props) => {
     );
   }
 
-export { FilledButton, FilledButton1, OutlinedButton, OutlinedButton1, LinkButton, TabButton, ActiveTabButton }
+export { FilledButton, FilledButton1, FilledButton1Non, OutlinedButton, OutlinedButton1, LinkButton, TabButton, ActiveTabButton }

@@ -5,8 +5,8 @@ import { useLocation } from 'react-router-dom';
 
 function CourseDetails() {
   const location = useLocation();
-  const id = location.state.idNumber;
-  console.log('This is the id ' + id);
+  const id = location.state?.idNumber;
+  // const id = location.state.idNumber;
   const [course, setCourse] = useState(null);
   const [progress, setProgress] = useState(0);
 

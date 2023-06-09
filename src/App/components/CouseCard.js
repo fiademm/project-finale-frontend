@@ -30,7 +30,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles/components.css';
-import { FilledButton, FilledButton1, OutlinedButton1 } from './Buttons';
+import { FilledButton, FilledButton1, FilledButton1Non, OutlinedButton1 } from './Buttons';
 import { useNavigate } from 'react-router-dom';
 
 function CourseCard({ course }) {
@@ -85,7 +85,7 @@ function CourseCard({ course }) {
           {isEnrolled ? (
           <div className='after-enrolled-buttons'>
             <OutlinedButton1 buttonText='Course outline' />
-            <FilledButton1 buttonText='Resume learning' buttonOnClick={handleStartLearning} />
+            <FilledButton1Non buttonText='Resume learning' buttonOnClick={handleStartLearning} />
           </div>
         ) : (
           <div className='before-enrolled-buttons'>
