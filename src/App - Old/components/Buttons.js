@@ -3,7 +3,11 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 const FilledButton = (props) => {
     return(
-        <button className='filled-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
+        <>
+            <Link to={props.buttonLink}>
+                <button className='filled-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
+            </Link>
+        </>
     );
 }
 
