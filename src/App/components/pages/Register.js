@@ -31,7 +31,7 @@ const Register = () => {
                         <FilledButton buttonStyle='filled-button-large' buttonText='Create account' />
                         <div style={{display: 'flex', flexDirection: 'column', gap: '1.2vw'}}>
                             <hr />
-                            <span style={{textAlign: "center"}}>Already have an account? <LinkButton buttonText='Sign in' buttonLink='/' /></span>
+                            <span style={{textAlign: "center"}}>Already have an account? <LinkButton buttonText='Sign in' buttonLink='/login' /></span>
                         </div>
                     </form>
                 </section>
