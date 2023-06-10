@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 const FilledButton = (props) => {
     return(
-        <button className={props.buttonStyle} onClick={props.buttonOnClick}>{props.buttonText}</button>
+        <button className={props.buttonStyle ? props.buttonStyle : 'filled-button'} onClick={props.buttonOnClick}>{props.buttonText}</button>
     );
 }
 
 const OutlinedButton = (props) => {
     return(
         <>
-            <button className='outlined-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
+            <button className={props.buttonStyle ? props.buttonStyle : 'outlined-button'} onClick={props.buttonOnClick}>{props.buttonText}</button>
         </>
     );
 }
@@ -28,7 +28,7 @@ const OutlinedButton1 = (props) => {
 const LinkButton = (props) => {
     return(
       <Link to={props.buttonLink}>
-        <button className='link-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
+        <button className={props.buttonStyle ? props.buttonStyle : 'link-button'} onClick={props.buttonOnClick}>{props.buttonText}</button>
       </Link>
     );
 }
