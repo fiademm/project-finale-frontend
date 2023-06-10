@@ -3,26 +3,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 const FilledButton = (props) => {
     return(
-        <button className='filled-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
+        <button className={props.buttonStyle} onClick={props.buttonOnClick}>{props.buttonText}</button>
     );
-}
-
-const FilledButton1 = (props) => {
-  return(
-      <>
-          <Link to={props.buttonLink}>
-              <button className='filled-button-1' onClick={props.buttonOnClick}>{props.buttonText}</button>
-          </Link>
-      </>
-  );
-}
-
-const FilledButton1Non = (props) => {
-  return(
-      <>
-          <button className='filled-button-1' onClick={props.buttonOnClick}>{props.buttonText}</button>
-      </>
-  );
 }
 
 const OutlinedButton = (props) => {
@@ -36,18 +18,18 @@ const OutlinedButton = (props) => {
 const OutlinedButton1 = (props) => {
   return(
       <>
+        <Link to={props.buttonLink}>
           <button className='outlined-button-1' onClick={props.buttonOnClick}>{props.buttonText}</button>
+        </Link>
       </>
   );
 }
 
 const LinkButton = (props) => {
     return(
-        <>
-            <Link to={props.buttonLink}>
-                <button className='link-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
-            </Link>
-        </>
+      <Link to={props.buttonLink}>
+        <button className='link-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
+      </Link>
     );
 }
 
@@ -71,4 +53,4 @@ const TabButton = (props) => {
     );
   }
 
-export { FilledButton, FilledButton1, FilledButton1Non, OutlinedButton, OutlinedButton1, LinkButton, TabButton, ActiveTabButton }
+export { FilledButton, OutlinedButton, LinkButton, TabButton, ActiveTabButton }

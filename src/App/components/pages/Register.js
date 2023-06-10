@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { FilledButton, LinkButton } from "./Buttons";
-import SignupIllustration from '../illustrations/Signup.png';
+import SignupIllustration from '../../illustrations/Signup.png';
+import { FilledButton, LinkButton } from "../Buttons";
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -28,10 +28,10 @@ const Register = () => {
                                 <input className="textbox" type="text" value={password} onChange={(event) => setPassword(event.target.value)} onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)} style={{background: isFocused ? "transparent" : "transparent", color: isFocused ? "black" : "black",}} />
                             </label>
                         </section>
-                        <FilledButton buttonText='Create account' buttonLink='/login' buttonOnClick={handleSubmit} />
+                        <FilledButton buttonStyle='filled-button-large' buttonText='Create account' />
                         <div style={{display: 'flex', flexDirection: 'column', gap: '1.2vw'}}>
                             <hr />
-                            <span style={{textAlign: "center"}}>Already have an account? <LinkButton buttonText='Sign in' buttonLink='/login' /></span>
+                            <span style={{textAlign: "center"}}>Already have an account? <LinkButton buttonText='Sign in' buttonLink='/' /></span>
                         </div>
                     </form>
                 </section>

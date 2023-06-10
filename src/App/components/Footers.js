@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/components.css';
 
-const FooterBeforeLogin = () => { // Rename the FooterBeforeLogin to Footer
+const DefaultFooter = () => {
   return (
     <div className="footer-container">
       <span>Copyright © 2023. All Rights Reserved</span>
@@ -9,7 +9,7 @@ const FooterBeforeLogin = () => { // Rename the FooterBeforeLogin to Footer
   );
 };
 
-const FooterAfterLogin = () => {
+const LoggedInFooter = () => {
   return (
     <div className="footer-container">
       <span>Copyright © 2023. All Rights Reserved</span>
@@ -17,4 +17,4 @@ const FooterAfterLogin = () => {
   );
 };
 
-export { FooterAfterLogin, FooterBeforeLogin };
+export { DefaultFooter, LoggedInFooter };
