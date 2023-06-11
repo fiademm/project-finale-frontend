@@ -10,7 +10,9 @@ const CourseDetails = () => {
 
     const handleCardClick = (index) => {
         const video = videos[index];
-        navigate('/videos', {state: {video}});
+        const totalVideos = videos.length;
+        navigate('/videos', {state: {video, index, videos, totalVideos}});
+        // console.log(video + "   " + index + "   " + videos.length + "   " + totalVideos);
     };
 
     return (
