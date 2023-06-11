@@ -2,7 +2,7 @@ import './App.css';
 import Badges from './App/components/pages/Badges';
 import Certificates from './App/components/pages/Certificates';
 import CourseDetails from './App/components/pages/CourseDetails';
-import CourseVideos from './App/components/pages/CourseVideo';
+import CourseVideo from './App/components/pages/CourseVideo';
 import Courses from './App/components/pages/Courses';
 import Error404 from './App/components/pages/Error404';
 import Error500 from './App/components/pages/Error500';
@@ -26,7 +26,7 @@ function App() {
           <Route path='/paths' element={<LearningPaths />}></Route>
           <Route path='/courses' element={<Courses />}></Route>
           <Route path='/details' element={<CourseDetails />}></Route>
-          <Route path='/videos' element={<CourseVideos />}></Route>
+          <Route path='/videos' element={<CourseVideo />}></Route>
           <Route path='/profiles' element={<Profile />}></Route>
           <Route path='/certificates' element={<Certificates />}></Route>
           <Route path='/badges' element={<Badges />}></Route>

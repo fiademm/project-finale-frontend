@@ -38,22 +38,11 @@ const CourseCard = ({ title, description, thumbnail, numVideos, videos }) => {
                 <h5 className="path-card-title">{title}</h5>
                 <p className="path-card-text">{description}</p>
             </section>
-          {/* {videos.slice(0, 3).map(video => (
-              <a key={video} href={video} target="_blank" rel="noopener noreferrer">{video}</a>
-              ))}
-            {videos.length > 3 &&
-                <p className="card-text">+ {videos.length - 3} more videos</p>
-            } */}
           <section className="section-2">
             <p className="card-text">{numVideos} videos</p>
             <LinkButton buttonText='Start learning >' otherProps={videos} />
           </section>
         </div>
-        {/* {showDetails &&
-        <div className="card-body">
-          <CourseDetails videos={videos} />
-        </div>
-        } */}
       </div>
     );
   };

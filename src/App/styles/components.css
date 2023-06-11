@@ -1,307 +1,313 @@
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header-container {
-    background-color: transparent;
-    color: #555555;
-    padding: 1.2vw 12vw;
-    width: 100%;
-    font-family: "Jost-Regular";
-    font-size: 0.83vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  background-color: transparent;
+  color: #555555;
+  padding: 1.2vw 12vw;
+  width: 100%;
+  font-family: "Jost-Regular";
+  font-size: 0.83vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    color: #0072c6;
-    color: #1f4e79;
-    font-family: "Jost-ExtraBold";
-    font-size: 1.4vw;
+  color: #0072c6;
+  color: #1f4e79;
+  font-family: "Jost-ExtraBold";
+  font-size: 1.4vw;
 }
 
 .logo-learn {
-    color: #1f4e79;
+  color: #1f4e79;
 }
 
 .user-info {
-    width: 2.2vw;
-    height: 2.2vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1f4e79;
-    color: #fafafa;
-    font-family: "Jost-Bold";
-    border-radius: 50%;
-    overflow: hidden;
+  width: 2.2vw;
+  height: 2.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f4e79;
+  color: #fafafa;
+  font-family: "Jost-Bold";
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .footer-container {
-    background-color: transparent;
-    color: #555555;
-    padding: 1.2vw 0;
-    width: 100%;
-    font-family: "Jost-Regular";
-    font-size: 0.83vw;
+  background-color: transparent;
+  color: #555555;
+  padding: 1.2vw 0;
+  width: 100%;
+  font-family: "Jost-Regular";
+  font-size: 0.83vw;
 }
 
 /* Styles for buttons component */
 .filled-button {
-    box-shadow: none;
-    border-color: transparent;
-    font-family: "Jost-SemiBold";
-    background-color: #1f4e79;
-    padding: 0.7vw 3vw;
-    border-radius: 0.16vw;
-    color: #fafafa;
-    font-size: 0.83vw;
-    width: 100%;
+  box-shadow: none;
+  border-color: transparent;
+  font-family: "Jost-SemiBold";
+  background-color: #1f4e79;
+  padding: 0.7vw 3vw;
+  border-radius: 0.16vw;
+  color: #fafafa;
+  font-size: 0.83vw;
+  width: 100%;
 }
 
 .filled-button-large {
-    box-shadow: none;
-    border-color: transparent;
-    font-family: "Jost-SemiBold";
-    background-color: #1f4e79;
-    padding: 0.7vw 3vw;
-    border-radius: 0.16vw;
-    color: #fafafa;
-    font-size: 0.83vw;
-    width: 100%;
+  box-shadow: none;
+  border-color: transparent;
+  font-family: "Jost-SemiBold";
+  background-color: #1f4e79;
+  padding: 0.7vw 3vw;
+  border-radius: 0.16vw;
+  color: #fafafa;
+  font-size: 0.83vw;
+  width: 100%;
 }
 
 .outlined-button {
-    background-color: transparent;
-    font-family: "Jost-SemiBold";
-    border-color: #1f4e79;
-    padding: 0.6vw 3vw;
-    border-radius: 0.16vw;
-    color: #1f4e79;
-    font-size: 0.83vw;
-    box-shadow: none;
+  background-color: transparent;
+  font-family: "Jost-SemiBold";
+  border-color: #1f4e79;
+  padding: 0.6vw 3vw;
+  border-radius: 0.16vw;
+  color: #1f4e79;
+  font-size: 0.83vw;
+  box-shadow: none;
 }
 
 .outlined-button-1 {
-    background-color: transparent;
-    font-family: "Jost-Medium";
-    border-color: #1f4e79;
-    padding: 0.6vw 3vw;
-    border-radius: 0.16vw;
-    color: #1f4e79;
-    font-size: 0.76vw;
-    box-shadow: none;
+  background-color: transparent;
+  font-family: "Jost-Medium";
+  border-color: #1f4e79;
+  padding: 0.6vw 3vw;
+  border-radius: 0.16vw;
+  color: #1f4e79;
+  font-size: 0.76vw;
+  box-shadow: none;
 }
 
 .link-button {
-    font-family: "Jost-SemiBold";
-    font-size: 0.83vw;
-    background-color: transparent;
-    box-shadow: none;
-    border: none;
+  font-family: "Jost-SemiBold";
+  font-size: 0.83vw;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
 }
 
 .tabs-component-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 4%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
 }
 
 .tab-button {
-    background-color: transparent;
-    width: 100%;
-    padding: 0.6vw 0vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.2s;
-    font-family: "Jost-Medium";
-    font-size: 0.96vw;
-    border: none;
-    cursor: pointer;
-    border-bottom: 0.1vw solid #ccc;
+  background-color: transparent;
+  width: 100%;
+  padding: 0.6vw 0vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  font-family: "Jost-Medium";
+  font-size: 0.96vw;
+  border: none;
+  cursor: pointer;
+  border-bottom: 0.1vw solid #ccc;
 }
 
 .tab-button:hover,
 .active-tab-button:hover {
-    color: #1f4e79;
+  color: #1f4e79;
 }
 
 .tab-button:visited,
 .active-tab-button:visited {
-    color: #1f4e79;
+  color: #1f4e79;
 }
 
 .active-tab-button {
-    background-color: transparent;
-    width: 100%;
-    padding: 0.6vw 0vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.2s;
-    font-family: "Jost-Medium";
-    font-size: 0.96vw;
-    border: none;
-    cursor: pointer;
-    border-bottom: 0.18vw solid #172d42;
+  background-color: transparent;
+  width: 100%;
+  padding: 0.6vw 0vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  font-family: "Jost-Medium";
+  font-size: 0.96vw;
+  border: none;
+  cursor: pointer;
+  border-bottom: 0.18vw solid #172d42;
 }
 
 /* Styles for error components */
-
 .error-component-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .error-content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
 }
 
 .error-illustration {
-    width: 36vw;
-    height: 36vw;
+  width: 36vw;
+  height: 36vw;
 }
 
 /* styles for login & signup components */
 .login-component-container {
-    font-family: "Jost-Regular";
-    background-image: linear-gradient(to right, #6190e8, #a7bfe888);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-family: "Jost-Regular";
+  background-image: linear-gradient(to right, #6190e8, #a7bfe888);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-container {
-    width: 70%;
-    height: 78%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1vw;
-    padding: 1vw;
+  width: 70%;
+  height: 78%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1vw;
+  padding: 1vw;
 }
 
 .illustration-container {
-    width: 50%;
-    height: 100%;
-    box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
-.illustration-container>img {
-    width: 100%;
-    height: 100%;
+.illustration-container > img {
+  width: 100%;
+  height: 100%;
 }
 
 .form-container {
-    width: 50%;
-    height: 100%;
-    background-color: #a7bfe888;
+  width: 50%;
+  height: 100%;
+  background-color: #a7bfe888;
 }
 
-.form-container>form>.title {
-    font-family: "Jost-Bold";
-    text-align: center;
-    font-size: 1.6vw;
+.form-container > form > .title {
+  font-family: "Jost-Bold";
+  text-align: center;
+  font-size: 1.6vw;
 }
 
-.form-container>form {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 16% 14%;
-    text-align: left;
+.form-container > form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16% 14%;
+  text-align: left;
 }
 
 .textboxes {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6vw;
 }
 
-.textboxes>label {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4vw;
+.textboxes > label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4vw;
 }
 
 .textbox {
-    width: 100%;
-    height: 2.8vw;
-    padding: 0 1vw;
-    font-family: "Jost-Regular";
-    font-size: 0.83vw;
-    box-shadow: none;
+  width: 100%;
+  height: 2.8vw;
+  padding: 0 1vw;
+  font-family: "Jost-Regular";
+  font-size: 0.83vw;
+  box-shadow: none;
 }
 
 /* Styles for Learning Path Card */
 .path-card {
-    border-radius: 0.4vw;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    font-family: 'Jost-Regular';
-    border: 0.1vw solid #ccc;
+  border-radius: 0.4vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  font-family: "Jost-Regular";
+  border: 0.1vw solid #ccc;
 }
 
 .path-card-image {
-    width: 30%;
-    border-radius: 0.4vw;
+  width: 30%;
+  border-radius: 0.4vw;
 }
 
 .path-card-body {
-    width: 100%;
-    padding: 1.6vw 2.4vw;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 0.4vw;
+  width: 100%;
+  padding: 1.6vw 2.4vw;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.4vw;
 }
 
-.path-card-body>.section-1 {
-    display: flex;
-    flex-direction: column;
+.path-card-body > .section-1 {
+  display: flex;
+  flex-direction: column;
 }
 
 .path-card-title {
-    font-family: "Jost-SemiBold";
-    font-size: 1.1vw;
+  font-family: "Jost-SemiBold";
+  font-size: 1.1vw;
 }
 
-.path-card-body>.section-2 {
-    display: flex;
-    justify-content: space-between;
+.path-card-body > .section-2 {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Styles for Learning Path List */
 .card-deck {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2vw;
-    background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+  background-color: transparent;
 }
 
 /* Styles for path container */
 .list-component-container {
-    padding: 2% 20%;
+  padding: 2% 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+  background-color: #f8f8f8;
+}
+/* Styles for course video component */
+.video-player-container {
+    padding: 1.2vw 12vw;
     display: flex;
     flex-direction: column;
-    gap: 1.2vw;
-    background-color: #f8f8f8;
+    gap: 0.6vw;
 }
