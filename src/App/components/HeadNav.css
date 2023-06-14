@@ -1,4 +1,8 @@
 /* HeadNav.css */
+*{
+  margin: 0px;
+  padding: 0px;
+}
 .navbar {
     position: sticky;
         padding: 10px 25px; 

@@ -71,16 +71,40 @@
       border: 1px solid #333333;
       font-size: 18px;
     }
+    .hero-button-browse:hover{
+      border-bottom: 2px solid #FFD700;
+         }
   
     .hero-image {
       width: 350px; /* Adjust the width as needed */
       height: 350px; /* Maintain aspect ratio */
       object-fit: cover; /* Adjust the image placement within the container */
       position: absolute;
-      top: 55%;
+      top: 60%;
       right: 0;
       transform: translate(-15%, -55%);
     }
+    .course-details {
+      margin-top: -4px;
+      margin-right: 849px;
+      margin-left: 30px; /* Move 20px from the left */
+      background-color: #ffffff;
+      padding: 10px;
+       width: 300px;
+      font-size: 8px;
+    }
+    .course-title {
+      font-size: 12px;
+      margin-bottom: 60px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .description{
+      font-size: 12px;
+      margin-bottom: 60px;
     
-  
+      text-align: left;
+    }
+    
+   
 

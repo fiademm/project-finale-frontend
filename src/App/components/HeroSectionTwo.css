@@ -1,0 +1,88 @@
+.title {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: 'Cinzel',serif;
+    background-color: #777777;
+  }
+  
+  .description {
+    text-align: left;
+    padding: 2px;
+    padding-top: 30px;
+    margin-left: 40px;
+    font-family: 'Jost',sans-serif;
+    background-color: #777777;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .stats-image {
+    width: 434px;
+    height: 200px;
+    margin-top: -30px; /* Optional: Adds spacing between the elements and the image */
+    margin-right: 800px;
+  }
+  .course-details {
+    margin-top: -6px;
+    margin-right: 849px;
+    margin-left: 30px; /* Move 20px from the left */
+    background-color: #ffffff;
+    padding: 10px;
+     width: 434px;
+    font-size: 8px;
+    }
+  .course-title{
+  font-size: 17px;
+  text-align: left;
+  margin-left: 10px;
+  }
+ .descriptionOne{
+  margin-top: -45px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+ }
+ .view-course-button {
+  padding: 8px;
+   margin-top: 16px;
+   margin-right: 305px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+.stats-imageOne{
+  width: 434px;
+  height: 200px;
+  margin-top: -100px; /* Optional: Adds spacing between the elements and the image */
+  margin-right: -100px;
+}
+.course-detailsOne{
+  margin-top: -6px;
+  margin-right: 900px;
+  margin-left: 480px; /* Move 20px from the left */
+  background-color: #ffffff;
+  padding: 10px;
+   width: 434px;
+  font-size: 8px;
+}
+.course-titleOne{
+  font-size: 17px;
+  text-align: left;
+  margin-left: 10px;
+}
+.descriptionTwo{
+    margin-top: 15px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+}
+.view-course-buttonOne{
+  padding: 8px;
+   margin-top: 16px;
+   margin-right: 305px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}

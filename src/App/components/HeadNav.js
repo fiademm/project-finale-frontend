@@ -5,7 +5,7 @@ const HeadNav = () => {
   return (
     <nav className="navbar">
       <ul className="navbar-nav">
-        <li className="nav-item"><a href="/" className="zillions-link">Zillions</a></li>
+        <li className="nav-item"><a href="/" className="zillions-link">Zillion</a></li>
         <li className="nav-item"><a href="/" className="nav-link">Home</a></li>
         <li className="nav-item"><a href="/" className="nav-link">About Us</a></li>
         <li className="nav-item"><a href="/" className="nav-link">Contact Us</a></li>
