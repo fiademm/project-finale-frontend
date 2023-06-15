@@ -63,4 +63,23 @@
       .nav-item:nth-child(7) {
         margin-left: 200px;
       }
+  
+
+.nav-item:hover .nav-link {
+  border-bottom: 2px solid #FFD700;
+  padding: 5px;
+}
+
+.get-started-button:hover {
+  background-color: #333333;
+  color: white;
+  border: none;
+  color: #FFD700;
+}
+
+.zillions-link:hover {
+  border-bottom: none;
+  padding: 5px;
+}
+
       

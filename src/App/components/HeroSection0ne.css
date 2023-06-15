@@ -72,7 +72,7 @@
       font-size: 18px;
     }
     .hero-button-browse:hover{
-      border-bottom: 2px solid #FFD700;
+      border-bottom: 1px solid #FFD700;
          }
   
     .hero-image {
@@ -106,5 +106,21 @@
       text-align: left;
     }
     
+.hero-button-browse:hover {
+  border: 1px solid #FFD700;
+  background-color: #FFD700;
+}
+
+.course-details:hover .course-title,
+.course-details:hover .description {
+  margin-bottom: 60px;
+}
+
+.hero-button-start:hover{
+  background-color: #333333;
+  color: white;
+  border: none;
+  color: #FFD700;
+}
    
 

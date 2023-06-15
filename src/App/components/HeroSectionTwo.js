@@ -28,12 +28,11 @@ function HeroSectionTwo() {
   <div className='second-container'>
     <img src={stats} alt="Stats" className="stats-imageOne" />
     <div className="course-detailsOne">
-      <h2 className="course-titleOne">Frontend Development - Advanced</h2>
+      <h2 className="course-titleOne">Frontend Development - Intermediate</h2>
       <p className="descriptionTwo">
-      This course is designed for beginners who want to  <br />
-      learn the basics of frontend development. You will  <br />
-      learn the fundamentals of HTML, CSS, and JavaScript.
-    </p>
+      17 lectures  <br />
+      16 hours 39mins  <br />
+        </p>
     <button className="view-course-buttonOne">View Course</button>
     </div>
   </div>
