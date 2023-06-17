@@ -406,3 +406,28 @@ a {
     height: 2vw;
     width: 1.2vw;
  }
+
+ .tab-icon-style {
+    height: 1vw;
+    width: 1vw;
+ }
+
+ .page-heading {
+    width: 100%;
+    padding: 1% 20%;
+    background-color: #f6f6f6;
+ }
+ 
+.page-heading h3 {
+    padding: 1vw 1.2vw;
+    background-color: #1f4e79;
+    color: #fafafa;
+    font-family: 'Jost-SemiBold';
+    text-align: left;
+    border-radius: 0.2vw;
+}
+.badge-span-style {
+    font-family: 'Jost-Regular';
+    background-color: transparent;
+    font-size: 0.85vw;
+}

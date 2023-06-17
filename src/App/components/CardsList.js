@@ -1,5 +1,5 @@
 import React from 'react';
-import { CourseCard, LearningPathCard, LinkCard } from './Cards';
+import { BadgeCard, CertificateCard, CourseCard, LearningPathCard, LinkCard, TabCard } from './Cards';
 
 const LearningPathList = ({ learningPaths }) => {
   return (
@@ -48,4 +48,51 @@ const CourseList = ({ courses }) => {
     );
   };
 
-export { LearningPathList, CourseList, LinksList };
+  const TabsList = ({ tabs }) => {
+    return (
+      <div style={{display: 'flex', flexDirection: 'row', gap: '0.6vw', padding: '0.5vw 0.8vw', borderRadius: '0.2vw'}}>
+        {tabs.map(tab => (
+          <TabCard
+            key={tab.title}
+            title={tab.title}
+            icon={tab.icon}
+          />
+        ))}
+      </div>
+    );
+  };
+
+  const CertificateList = ({ certificates }) => {
+    return (
+      <div style={{display: 'flex', flexDirection: 'column', gap: '0.2vw', borderRadius: '0.2vw'}}>
+        {certificates.map(certificate => (
+          <CertificateCard
+            key={certificate.code}
+            code={certificate.code}
+            title={certificate.title}
+            issuer={certificate.issuer}
+            date={certificate.date}
+          />
+        ))}
+      </div>
+    );
+  };
+
+  const BadgeList = ({ badges }) => {
+    return (
+      <div style={{display: 'flex', flexWrap:'wrap', gap: '0.2vw', borderRadius: '0.2vw'}}>
+        {badges.map(badge => (
+          <BadgeCard
+            key={badge.title}
+            image={badge.image}
+            badge={badge.badge}
+            title={badge.title}
+            description={badge.description}
+            date={badge.date}
+          />
+        ))}
+      </div>
+    );
+  };
+
+export { LearningPathList, CourseList, LinksList, TabsList, CertificateList, BadgeList };

@@ -63,4 +63,39 @@ const LinkCard = ({ icon, title, link }) => {
   );
 };
 
-export { LearningPathCard, CourseCard, LinkCard };
+const TabCard = ({ icon, title, link }) => {
+  const IconName = icon || 'div';
+  return (
+    <Link to={link} style={{borderRadius: '0.2vw'}}>
+      <div style={{display: 'flex', flexDirection:'row', alignItems:'center', gap: '0.5vw', padding: '0.4vw 1.8vw', borderRadius: '0.2vw', backgroundColor: 'transparent'}}>
+        <IconName className='tab-icon-style' />
+        <span style={{fontFamily: 'Jost-Medium', fontSize: '0.83vw'}}>{title}</span>
+      </div>
+    </Link>
+  );
+};  
+
+const CertificateCard = ({ code, title, issuer, date, link }) => {
+  return (
+    <Link to={link} style={{borderRadius: '0.1vw', display: 'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between', gap: '0.5vw', width:'100%', padding: '1vw 1.2vw', borderRadius: '0.1vw', backgroundColor: '#fafafa', textAlign: 'left'}}>
+        <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '5%'}}>{code}</span>
+        <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '50%'}}>{title}</span>
+        <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '24%'}}>{issuer}</span>
+        <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '12%'}}>{date}</span>
+    </Link>
+  );
+}; 
+
+const BadgeCard = ({ image, badge, title, description, date, link }) => {
+  return (
+    <Link to={link} style={{borderRadius: '0.1vw', display: 'flex', flexDirection:'row', alignItems:'center', width:'33.1%', padding: '1vw 1.2vw', borderRadius: '0.1vw', backgroundColor: '#fafafa', textAlign: 'left'}}>
+        <img src={image} alt="" />
+        <span style={{fontFamily: 'Jost-SemiBold', backgroundColor: 'transparent', fontSize: '0.6vw', width: '5%'}}>{badge}</span>
+        <span className='badge-span-style'>{title}</span>
+        <span className='badge-span-style'>{description}</span>
+        <span className='badge-span-style'>{date}</span>
+    </Link>
+  );
+}; 
+
+export { LearningPathCard, CourseCard, LinkCard, TabCard, CertificateCard, BadgeCard };

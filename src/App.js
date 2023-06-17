@@ -28,9 +28,11 @@ function App() {
           <Route path='/details' element={<CourseDetails />}></Route>
           <Route path='/videos' element={<CourseVideo />}></Route>
           <Route path='/profiles' element={<Profile />}></Route>
-          <Route path='/certificates' element={<Certificates />}></Route>
           <Route path='/badges' element={<Badges />}></Route>
+          <Route path='/certificates' element={<Certificates />}></Route>
+          <Route path='/certificate/details' element={<Certificates />}></Route>
           <Route path='/favorites' element={<Favorites />}></Route>
+          <Route path='/mycourses' element={<Favorites />}></Route>
           <Route path='/404' element={<Error404 />}></Route>
           <Route path='/500' element={<Error500 />}></Route>
         </Routes>
