@@ -88,12 +88,16 @@ const CertificateCard = ({ code, title, issuer, date, link }) => {
 
 const BadgeCard = ({ image, badge, title, description, date, link }) => {
   return (
-    <Link to={link} style={{borderRadius: '0.1vw', display: 'flex', flexDirection:'row', alignItems:'center', width:'33.1%', padding: '1vw 1.2vw', borderRadius: '0.1vw', backgroundColor: '#fafafa', textAlign: 'left'}}>
-        <img src={image} alt="" />
-        <span style={{fontFamily: 'Jost-SemiBold', backgroundColor: 'transparent', fontSize: '0.6vw', width: '5%'}}>{badge}</span>
-        <span className='badge-span-style'>{title}</span>
-        <span className='badge-span-style'>{description}</span>
-        <span className='badge-span-style'>{date}</span>
+    <Link to={link} style={{borderRadius: '0.1vw', display: 'flex', flexDirection:'column', gap:'1vw', width:'33%', padding: '1vw 1.2vw', borderRadius: '0.1vw', backgroundColor: 'transparent', color: 'black', textAlign: 'left', border: '0.0016vw solid #ddd'}}>
+        <div style={{width: '100%', display:'flex', alignItems: 'center', justifyContent: 'center', padding: '3vw 2vw', borderRadius: '0.2vw', backgroundColor: '#333'}}>
+          <img src={image} alt="" style={{height: '5vw', backgroundColor: 'transparent'}} />
+        </div>
+        <div style={{width: '100%', display:'flex', flexDirection: 'column', gap:'0.2vw', backgroundColor: 'transparent'}}>
+          <span style={{fontFamily: 'Jost-Regular', textAlign:'left', backgroundColor: 'transparent', fontSize: '0.66vw', width: '100%'}}>{badge}</span>
+          <span style={{fontFamily: 'Jost-Medium', backgroundColor: 'transparent', fontSize: '0.92vw', width: '100%'}}>{title}</span>
+          <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.80vw', width: '100%'}}>{description}</span>
+          <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.70vw', width: '100%', padding: '0.6vw 0'}}>Earned on {date}</span>
+        </div>
     </Link>
   );
 }; 

@@ -80,7 +80,7 @@ const CourseList = ({ courses }) => {
 
   const BadgeList = ({ badges }) => {
     return (
-      <div style={{display: 'flex', flexWrap:'wrap', gap: '0.2vw', borderRadius: '0.2vw'}}>
+      <div style={{display: 'flex', flexWrap:'wrap', gap: '0.2vw', borderRadius: '0.2vw', backgroundColor: 'transparent'}}>
         {badges.map(badge => (
           <BadgeCard
             key={badge.title}
