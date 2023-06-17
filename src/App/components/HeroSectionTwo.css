@@ -36,10 +36,10 @@
   }
   
    .stats-image {
-    width: 434px;
+    width: 380px;
     height: 200px;
     margin-bottom: 20px;
-    margin-right: 36px;
+    margin-right: 98px;
   }
 
   .course-title {
@@ -86,7 +86,7 @@
  
   .view-course-buttonOne {
     margin-top: 2px;
-    margin-right: 340px;
+    margin-left: -565px;
    background-color: black;
    color: white;
    border: none;
@@ -106,14 +106,14 @@
     width: 333px;
     height: 200px;
     margin-bottom: 20px;
-    margin-left: -240px;
+    margin-left: -350px;
   }
 
 .course-titleOne{
   font-size: 16px;
   margin-bottom: 10px;
   text-align: left;
-  margin-left: 12px;
+  margin-left: -100px;
   margin-top: -10px;
 }
 
@@ -121,13 +121,10 @@
   margin-top: -2px;
   font-size: 14px;
   text-align: left;
-  margin-left: 12px;
+  margin-left: -100px;
   line-height: 1.8;
 }
 
-/* Keep the existing styles */
-
-/* Add the following styles */
 
 .course-container:hover .view-course-button,
 .first-container:hover .view-course-button,

@@ -11,7 +11,8 @@ function HeroSectionTwo() {
         decision-making abilities, and getting ready to live a normal life.
       </p>
       
-      <div className="course-container">
+ <div className="course-container">
+  
   <div className='first-container'>
     <img src={stats} alt="Stats" className="stats-image" />
     <div className="course-details">
@@ -31,11 +32,12 @@ function HeroSectionTwo() {
       <h2 className="course-titleOne">Frontend Development - Intermediate</h2>
       <p className="descriptionTwo">
       17 lectures  <br />
-      16 hours 39mins  <br />
+      16 hours 39mins  
         </p>
     <button className="view-course-buttonOne">View Course</button>
     </div>
   </div>
+  
 </div>
    </div>
   );
