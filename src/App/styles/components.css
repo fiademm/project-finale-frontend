@@ -256,6 +256,7 @@ a {
     flex-direction: row;
     font-family: "Jost-Regular";
     border: 0.1vw solid #ccc;
+    width: 100%;
 }
 
 .path-card-image {
@@ -333,3 +334,75 @@ a {
     background-color: #007bff;
     transition: width 0.1s ease-in-out;
 }
+
+/* styles for course details component */
+.course-details-deck {
+    padding: 2% 20%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 0.4vw;
+    font-family: 'Jost-Regular';
+}
+
+.course-details-deck>.card {
+    padding: 1vw 8vw;
+    border: 0.1vw solid black;
+    border-radius: 0.1vw;
+}
+
+.card>.card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* styles for circle component */
+.circle {
+    width: 11vw;
+    height: 11vw;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* styles for profile component */
+.component-container {
+    padding: 2% 20%;
+    font-family: 'Jost-Regular';
+    font-size: 0.93vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+
+/* styles for link card */
+.links-card-deck {
+    width: 100%;
+}
+
+.link-card {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 1.4vw 2vw;
+}
+
+.link-card-body {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+    justify-content: flex-start;
+}
+ /* styles for icons */
+ .icon-style {
+    height: 2vw;
+    width: 1.2vw;
+ }
