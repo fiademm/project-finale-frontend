@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { LoggedInHeader } from '../Headers';
 import { LoggedInFooter } from '../Footers';
+import '../../styles/components.css';
 
 const CourseDetails = () => {
     const location = useLocation();
@@ -18,15 +19,15 @@ const CourseDetails = () => {
     return (
         <>
             <LoggedInHeader />
-            <div className="card-deck">
+            <div className="card-deck course-details-deck">
                 {videos.map((video, index) => (
                 <div key={index} className="card" onClick={() => {
                     handleCardClick(index);
                     console.log('This is the index ' + index)
                 }}>
                     <div className="card-body">
-                    <h5 className="card-title">Video {index + 1}</h5>
-                    <p className="card-text">{video}</p>
+                        <h5 className="card-title" style={{textAlign: 'left', fontFamily: 'Jost-Medium', fontSize: '0.83vw'}}>Lesson {index + 1} - Introduction to the rest</h5>
+                        <p className="card-text">{video}</p>
                     </div>
                 </div>
                 ))}
