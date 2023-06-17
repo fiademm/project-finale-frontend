@@ -7,8 +7,6 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [isFocused, setIsFocused] = useState(false);
 
-    const handleSubmit = () => {};
-
     return (
         <div className="login-component-container">
             <div className="section-container">
