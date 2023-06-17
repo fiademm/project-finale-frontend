@@ -2,7 +2,8 @@ import React from 'react';
 import { FilledButton, LinkButton } from './Buttons';
 import '../styles/components.css';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { BsChevronRight } from "react-icons/bs";
 
 const LearningPathCard = ({ title, description, thumbnail, numVideos }) => {
   return (
@@ -47,4 +48,19 @@ const CourseCard = ({ title, description, thumbnail, numVideos, videos }) => {
     );
   };
 
-export { LearningPathCard, CourseCard };
+const LinkCard = ({ icon, title, link }) => {
+  const IconName = icon || 'div';
+  return (
+    <Link to={link}>
+      <div className="link-card">
+        <div className="link-card-body">
+          <IconName className='icon-style' />
+          <h5 style={{fontFamily: 'Jost-Regular', fontSize: '0.96vw', fontWeight: 'bold'}}>{title}</h5>
+        </div>
+        <BsChevronRight className='icon-style' />
+      </div>
+    </Link>
+  );
+};
+
+export { LearningPathCard, CourseCard, LinkCard };

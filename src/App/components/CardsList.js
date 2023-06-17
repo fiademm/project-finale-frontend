@@ -1,5 +1,5 @@
 import React from 'react';
-import { CourseCard, LearningPathCard } from './Cards';
+import { CourseCard, LearningPathCard, LinkCard } from './Cards';
 
 const LearningPathList = ({ learningPaths }) => {
   return (
@@ -34,4 +34,18 @@ const CourseList = ({ courses }) => {
     );
   };
 
-export { LearningPathList, CourseList };
+  const LinksList = ({ links }) => {
+    return (
+      <div className="links-card-deck">
+        {links.map(link => (
+          <LinkCard
+            key={link.title}
+            title={link.title}
+            icon={link.icon}
+          />
+        ))}
+      </div>
+    );
+  };
+
+export { LearningPathList, CourseList, LinksList };
