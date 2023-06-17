@@ -14,17 +14,17 @@ const Profile = () => {
         {
             icon: BsTrophy,
             title: 'Achievements',
-            link: '/achievements'
-        },
-        {
-            icon: BsBookmark,
-            title: 'Bookmarks',
-            link: '/bookmarks'
+            link: '/badges'
         },
         {
             icon: BsAward,
             title: 'Certificates',
             link: '/certificates'
+        },
+        {
+            icon: BsBookmark,
+            title: 'Favorites',
+            link: '/favorites'
         },
         {
             icon: BsPlayBtn,
