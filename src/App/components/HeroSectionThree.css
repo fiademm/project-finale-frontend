@@ -1,0 +1,24 @@
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex-basis: 50%;
+  }
+  
+  .column:not(:first-child) {
+    margin-right: 920px; /* Set the spacing between columns */
+  }
+  
+  .icon {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    background-color: #ccc; /* Add your desired background color */
+    margin-bottom: 20px;
+  }
+  
+  .icon-container {
+    padding-left: 35px; /* Set left padding */
+  }
+  
