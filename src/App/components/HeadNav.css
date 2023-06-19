@@ -55,7 +55,7 @@
       }
       
       .nav-link:hover {
-        border-bottom: 2px solid #FFD700;
+        border-bottom: 4px solid #FFD700;
         border-radius: 2px;
         padding: 4px;
       }
