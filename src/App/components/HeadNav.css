@@ -4,9 +4,9 @@
   padding: 0px;
 }
 .navbar {
-    position: sticky;
-        padding: 10px 25px; 
-      }
+  position: sticky;
+  padding: 10px 50px; /* Updated padding values */
+}
       
       .navbar-nav {
         list-style-type: none;

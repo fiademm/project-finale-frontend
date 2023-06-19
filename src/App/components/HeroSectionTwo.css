@@ -1,32 +1,33 @@
 .title {
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 40px;
-    font-family: 'Cinzel',serif;
-     }
-  
-  .description {
-    text-align: left;
-    padding: 2px;
-    padding-top: 30px;
-    margin-left: 40px;
-    font-family: 'Jost',sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
-  }
+  text-align: left;
+  margin-top: 20px;
+  padding-left: 40px; /* Added padding-left */
+  padding-right: 60px; /* Added padding-right */
+  font-family: 'Cinzel', serif;
+}
+
+.description {
+  text-align: left;
+  padding: 2px;
+  padding-top: 30px;
+  padding-left: 40px; /* Added padding-left */
+  padding-right: 60px; /* Added padding-right */
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.course-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -50px;
+  padding-left: 60px; /* Added padding-left */
+  padding-right: 60px; /* Added padding-right */
+  width: 1000px;
+  height: 400px;
+}
 
 
-
-  .course-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -50px;
-    margin-left: 30px;
-    margin-right: 200px;
-    width: 1000px;
-    height: 400px;
-  }
-  
   .first-container, .second-container {
     flex-basis: calc(60% - 10px);
     max-width: 500px;
@@ -39,13 +40,13 @@
     width: 380px;
     height: 200px;
     margin-bottom: 20px;
-    margin-right: 98px;
+    margin-right: 80px;
   }
 
   .course-title {
     font-size: 16px;
     text-align: left;
-    margin-left: -35px;
+    margin-left: -28px;
     margin-top: -10px;
   }
   
@@ -53,7 +54,7 @@
     margin-top: -50px;
     font-size: 14px;
     text-align: left;
-    margin-left: -35px;
+    margin-left: -30px;
     line-height: 1.8;
   }
   .descriptionOne, .descriptionTwo {
@@ -71,7 +72,7 @@
 
   .view-course-button {
     margin-top: 2px;
-    margin-left: -242px;
+    margin-left: -232px;
     background-color: black;
     color: white;
     border: none;
@@ -85,7 +86,7 @@
  
   .view-course-buttonOne {
     margin-top: 2px;
-    margin-left: -565px;
+    margin-left: -420px;
    background-color: black;
    color: white;
    border: none;
@@ -105,14 +106,14 @@
     width: 333px;
     height: 200px;
     margin-bottom: 20px;
-    margin-left: -350px;
+    margin-left: -200px;
   }
 
 .course-titleOne{
   font-size: 16px;
   margin-bottom: 10px;
   text-align: left;
-  margin-left: -100px;
+  margin-left: -90px;
   margin-top: -10px;
 }
 
@@ -120,7 +121,7 @@
   margin-top: -2px;
   font-size: 14px;
   text-align: left;
-  margin-left: -100px;
+  margin-left: -90px;
   line-height: 1.8;
 }
 

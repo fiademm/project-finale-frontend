@@ -1,18 +1,19 @@
 .hero-section {
-    padding: 10px;
-      position: relative;
-      left: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  padding: 10px 50px; /* Updated padding values */
+  position: relative;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
     
     .hero-title1 { 
       margin-top: 62px;
       padding: 1px 14px;
       font-size: 48px;
       font-family: 'Cinzel',serif;
-      margin-left: -75px;
+      margin-left: -85px;
     }
     
     .hero-title2{
@@ -82,7 +83,7 @@
       position: absolute;
       top: 60%;
       right: 0;
-      transform: translate(-15%, -55%);
+      transform: translate(-15%, -45%);
     }
     .course-details {
       margin-top: -4px;

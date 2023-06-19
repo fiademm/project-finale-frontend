@@ -15,7 +15,7 @@
   align-items: center;
   padding-top: -170px;
   width: 500px; 
-  margin-left: -130px;
+  margin-left: -96px;
 }
 
 .column {
@@ -35,10 +35,10 @@
 
 .boy-image {
   width: 350px; /* Adjust the width as needed */
-  height: 450px; /* Maintain aspect ratio */
+  height: 400px; /* Maintain aspect ratio */
   object-fit: cover; /* Adjust the image placement within the container */
   position: absolute;
   top: 200%;
   right: 0;
-  transform: translate(-65%, -55%);
+  transform: translate(-45%, -63%);
 }
