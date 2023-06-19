@@ -1,5 +1,8 @@
 import React from 'react';
 import './HeroSectionThree.css';
+import boy from './images/boy.jpg'
+import { FaPlay, FaClock, FaCertificate, FaLifeRing } from 'react-icons/fa';
+
 
 function HeroSectionThree() {
   return (
@@ -11,21 +14,22 @@ function HeroSectionThree() {
 
       <div className="icon-container">
         <div className="column">
-          <div className="icon">
-            {/* Add your first icon here */}
+        <div className="icon">
+            <FaPlay /> {/* Play icon */}
           </div>
           <div className="icon">
-            {/* Add your second icon here */}
+            <FaClock /> {/* Clock icon */}
           </div>
         </div>
         <div className="column">
           <div className="icon">
-            {/* Add your third icon here */}
+            <FaCertificate /> {/* Certified icon */}
           </div>
           <div className="icon">
-            {/* Add your fourth icon here */}
+            <FaLifeRing /> {/* Lifetime access icon */}
           </div>
         </div>
+        <img src={boy} alt="boy" className="boy-image" />
       </div>
     </div>
   );

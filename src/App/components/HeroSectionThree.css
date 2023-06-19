@@ -1,39 +1,44 @@
 .title {
-    text-align: left;
-    margin-left: 40px;
-    padding-top: 20px;
-  }
-  
-  .description {
-    padding-top: 30px;
-    margin-left: 40px;
-  }
+  text-align: left;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+
+.description {
+  padding-top: 40px;
+  margin-left: 40px;
+}
 
 .icon-container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: -30px;
-  }
-  
-  .column {
-    flex-basis: 50%;
-  }
-  
-  .column:not(:first-child) {
-    margin-top: -30px;
-    margin-right: 1150px; /* Set the spacing between columns */
-  }
-  .column:not(:last-child){
-    margin-top: -30px;
-  }
-  .icon {
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-    background-color: #ccc; /* Add your desired background color */
-    margin-bottom: 20px;
-  }
-  
-  .icon-container {
-    padding-left: 35px; /* Set left padding */
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: -170px;
+  width: 500px; 
+  margin-left: -130px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 20%; /* Adjust the width of the columns */
+}
+
+.icon {
+  padding-top: 20px;
+  margin-bottom: 10px; /* Add some spacing between the icons */
+  width: 60px; /* Adjust the width of the icons */
+  height: 60px; /* Adjust the height of the icons */
+  background-color: #ccc;
+}
+
+.boy-image {
+  width: 350px; /* Adjust the width as needed */
+  height: 450px; /* Maintain aspect ratio */
+  object-fit: cover; /* Adjust the image placement within the container */
+  position: absolute;
+  top: 200%;
+  right: 0;
+  transform: translate(-65%, -55%);
+}
