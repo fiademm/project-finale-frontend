@@ -13,24 +13,28 @@ function HeroSectionThree() {
       </p>
 
       <div className="icon-container">
-        <div className="column">
-        <div className="icon">
-            <FaPlay /> {/* Play icon */}
-          </div>
-          <div className="icon">
-            <FaClock /> {/* Clock icon */}
-          </div>
-        </div>
-        <div className="column">
-          <div className="icon">
-            <FaCertificate /> {/* Certified icon */}
-          </div>
-          <div className="icon">
-            <FaLifeRing /> {/* Lifetime access icon */}
-          </div>
-        </div>
-        <img src={boy} alt="boy" className="boy-image" />
-      </div>
+  <div className="column">
+    <div className="icon">
+      <FaPlay /> {/* Play icon */}
+    </div>
+    <span className="icon-text">Lezz go</span> {/* Text */}
+    <div className="icon">
+      <FaClock /> {/* Clock icon */}
+    </div>
+    <span className="icon-text">Lezz go</span> {/* Text */}
+  </div>
+  <div className="column">
+    <div className="icon">
+      <FaCertificate /> {/* Certified icon */}
+    </div>
+    <span className="icon-text">Lezz go</span> {/* Text */}
+    <div className="icon">
+      <FaLifeRing /> {/* Lifetime access icon */}
+    </div>
+    <span className="icon-text">Lezz go</span> {/* Text */}
+  </div>
+  <img src={boy} alt="boy" className="boy-image" />
+</div>
     </div>
   );
 }

@@ -1,53 +1,49 @@
-.hero-section {
-  padding: 10px 50px; /* Updated padding values */
-  position: relative;
-  left: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  .hero-section {
+      padding: 10px 50px; /* Updated padding values */
+      position: relative;
+      left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     
     .hero-title1 { 
-      margin-top: 62px;
+      padding-top: 88px;
       padding: 1px 14px;
       font-size: 48px;
       font-family: 'Cinzel',serif;
       margin-left: -85px;
+      line-height: 1.8;
     }
     
     .hero-title2{
-      margin-top: 20px;
+      padding-top: 24px;
       padding: 1px 14px;
       font-size: 48px;
       font-family: 'Cinzel',serif;
       margin-left: 4px;
     }
-    .hero-title1 + .hero-title2 {
-      margin-top: 14px; /* Adjust the margin as needed */
+
+   
+    .hero-subtitle1 {
+      padding-top: 24px;
+      padding: 24px 5px;
+      font-size: 17px;
+      font-family: 'Jost', sans-serif;
+      margin-left: -20px;
     }
     
-    .hero-subtitle1 {
-      margin-top: 5px;
-      padding: 13px 12px;
-      font-size: 17px;
-      font-family: 'Jost',sans-serif;
-    }
-
     
     .hero-subtitle2 {
-      margin-top: -15px;
-      padding: 15px 14px;
+      padding-top: 0px;
+       padding: -5px 14px;
       font-size: 17px;
       font-family: 'Jost',sans-serif;
     }
-    
-    .hero-subtitle + .hero-subtitle{
-      margin-top: -8px;
-      }
-   
+  
       .hero-buttons {
-      margin-top: 20px;
+      padding-top: 56px;
     }
     
     .hero-button {
@@ -66,7 +62,7 @@
     }
     
     .hero-button-browse {
-      padding: 15px 20px;
+       padding: 15px 20px;
       background-color: #fff;
       color: #333333;
       border: 1px solid #333333;
@@ -77,13 +73,13 @@
          }
   
     .hero-image {
-      width: 350px; /* Adjust the width as needed */
-      height: 350px; /* Maintain aspect ratio */
+      width: 450.47px; /* Adjust the width as needed */
+      height: 352.91px; /* Maintain aspect ratio */
       object-fit: cover; /* Adjust the image placement within the container */
       position: absolute;
       top: 60%;
       right: 0;
-      transform: translate(-15%, -45%);
+      transform: translate(-15%, -52%);
     }
     .course-details {
       margin-top: -4px;

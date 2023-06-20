@@ -5,7 +5,7 @@ import stats from './images/stats.jpg';
 function HeroSectionTwo() {
   return (
     <div >
-      <h1 className="title">Popular Courses</h1>
+      <h1 className="title">POPULAR COURSES</h1>
       <p className="description">
         Education is the process of learning knowledge, strengthening one’s <br />
         decision-making abilities, and getting ready to live a normal life.

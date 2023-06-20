@@ -1,7 +1,7 @@
 .title {
   text-align: left;
   margin-left: 40px;
-  padding-top: 20px;
+  margin-top: 138px;;
 }
 
 .description {
@@ -40,5 +40,5 @@
   position: absolute;
   top: 200%;
   right: 0;
-  transform: translate(-45%, -63%);
+  transform: translate(-45%, 5%);
 }
