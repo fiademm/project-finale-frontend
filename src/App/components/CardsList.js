@@ -1,5 +1,5 @@
 import React from 'react';
-import { BadgeCard, CertificateCard, CourseCard, LearningPathCard, LinkCard, TabCard } from './Cards';
+import { BadgeCard, CertificateCard, CourseCard, EnrolledCourseCard, LearningPathCard, LinkCard, TabCard } from './Cards';
 
 const LearningPathList = ({ learningPaths }) => {
   return (
@@ -34,12 +34,30 @@ const CourseList = ({ courses }) => {
     );
   };
 
+  const EnrolledCourseList = ({ enrolledCourses }) => {
+    return (
+      <div className="card-deck">
+        {enrolledCourses.map(enrolledCourse => (
+          <EnrolledCourseCard
+            key={enrolledCourse.title}
+            title={enrolledCourse.title}
+            description={enrolledCourse.description}
+            thumbnail={enrolledCourse.thumbnail}
+            numVideos={enrolledCourse.numVideos}
+            videos={enrolledCourse.videos}
+          />
+        ))}
+      </div>
+    );
+  };
+
   const LinksList = ({ links }) => {
     return (
       <div className="links-card-deck">
         {links.map(link => (
           <LinkCard
             key={link.title}
+            link={link.link}
             title={link.title}
             icon={link.icon}
           />
@@ -95,4 +113,4 @@ const CourseList = ({ courses }) => {
     );
   };
 
-export { LearningPathList, CourseList, LinksList, TabsList, CertificateList, BadgeList };
+export { LearningPathList, CourseList, EnrolledCourseList, LinksList, TabsList, CertificateList, BadgeList };

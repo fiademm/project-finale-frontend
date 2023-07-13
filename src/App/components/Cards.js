@@ -32,16 +32,52 @@ const CourseCard = ({ title, description, thumbnail, numVideos, videos }) => {
     };
 
     return (
-      <div className="path-card" onClick={handleToggleDetails}>
-        <img className='path-card-image' src={thumbnail} alt={title} />
-        <div className="path-card-body">
-            <section className='section-1'>
-                <h5 className="path-card-title">{title}</h5>
-                <p className="path-card-text">{description}</p>
+      <div className="course-card" onClick={handleToggleDetails}>
+        <img className='course-card-image' src={thumbnail} alt={title} />
+        <div className="course-card-body">
+            <section className='course-section-1'>
+                <h5 className="course-card-title" style={{fontFamily: 'Jost-SemiBold', fontSize: '0.93vw', color: '#1c1d1f'}}>{title}</h5>
+                <p className="course-card-text" style={{fontFamily: 'Jost-Regular', fontSize: '0.83vw', color: '#1c1d1f'}}>{description}</p>
+                <p style={{fontFamily: 'Jost-Regular', fontSize: '0.74vw', color: '#6a85bd'}}>Dr. Michael Boahene</p>
+                <p>Rating: 4.4</p>
             </section>
-          <section className="section-2">
-            <p className="card-text">{numVideos} videos</p>
-            <LinkButton buttonText='Start learning >' otherProps={videos} />
+          <section className="course-section-2">
+            <div style={{display: 'flex', flexDirection: 'row', gap: '1vw'}}>
+              <span className="course-card-text">{numVideos} videos</span>
+              <span className="course-card-text">{numVideos} total hours</span>
+              <span className="course-card-text">{numVideos} lectures</span>
+            </div>
+          </section>
+        </div>
+      </div>
+    );
+  };
+
+  const EnrolledCourseCard = ({ title, description, thumbnail, numVideos, videos }) => {
+    const [showDetails, setShowDetails] = useState(false);
+    const navigate = useNavigate();
+
+    const handleToggleDetails = () => {
+        navigate('/details', {state: {videos}});
+    };
+
+    return (
+      <div className="course-card" onClick={handleToggleDetails}>
+        <img className='course-card-image' src={thumbnail} alt={title} />
+        <div className="course-card-body">
+            <section className='course-section-1'>
+                <h5 className="course-card-title" style={{fontFamily: 'Jost-SemiBold', fontSize: '0.93vw', color: '#1c1d1f'}}>{title}</h5>
+                <p className="course-card-text" style={{fontFamily: 'Jost-Regular', fontSize: '0.83vw', color: '#1c1d1f'}}>{description}</p>
+                <p style={{fontFamily: 'Jost-Regular', fontSize: '0.74vw', color: '#6a85bd'}}>Dr. Michael Boahene</p>
+                <p>Rating: 4.4</p>
+            </section>
+          <section className="course-section-2">
+            <div style={{display: 'flex', flexDirection: 'row', gap: '1vw'}}>
+              <span className="course-card-text">{numVideos} videos</span>
+              <span className="course-card-text">{numVideos} total hours</span>
+              <span className="course-card-text">{numVideos} lectures</span>
+            </div>
+            <LinkButton buttonText='Resume learning >' otherProps={videos} />
           </section>
         </div>
       </div>
@@ -102,4 +138,4 @@ const BadgeCard = ({ image, badge, title, description, date, link }) => {
   );
 }; 
 
-export { LearningPathCard, CourseCard, LinkCard, TabCard, CertificateCard, BadgeCard };
+export { LearningPathCard, CourseCard, EnrolledCourseCard, LinkCard, TabCard, CertificateCard, BadgeCard };

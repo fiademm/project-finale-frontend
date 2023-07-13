@@ -5,6 +5,8 @@ import { BadgeList } from '../CardsList';
 import Badge1 from '../../images/badges/badge1.png';
 import Badge2 from '../../images/badges/badge2.png';
 import Badge3 from '../../images/badges/badge3.png';
+import { Bs0CircleFill, BsChevronLeft } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const Badges = () => {
     const badges = [
@@ -126,6 +128,7 @@ const Badges = () => {
         <>
             <LoggedInHeader />
             <div className='page-heading'>
+                <Link to='/profiles' className='page-link'><BsChevronLeft className='page-icon' /> <span style={{fontFamily: 'Jost-Medium', backgroundColor: 'transparent', color: '#fafafa', fontSize: '0.7vw'}}>Back to profiles</span></Link>
                 <h3>Badges</h3>
             </div>
             <div style={{width:'100%', padding:'1% 20%', backgroundColor:'#f6f6f6', borderRadius:'0.2vw'}}>

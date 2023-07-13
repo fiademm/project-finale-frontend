@@ -7,9 +7,11 @@ import Courses from './App/components/pages/Courses';
 import Error404 from './App/components/pages/Error404';
 import Error500 from './App/components/pages/Error500';
 import Favorites from './App/components/pages/Favorites';
+import JobListing from './App/components/pages/JobListing';
 import LandingPage from './App/components/pages/LandingPage';
 import LearningPaths from './App/components/pages/LearningPaths';
 import Login from './App/components/pages/Login';
+import MyCourses from './App/components/pages/MyCourses';
 import Profile from './App/components/pages/Profile';
 import Register from './App/components/pages/Register';
 import './App/styles/general.css';
@@ -32,7 +34,8 @@ function App() {
           <Route path='/certificates' element={<Certificates />}></Route>
           <Route path='/certificate/details' element={<Certificates />}></Route>
           <Route path='/favorites' element={<Favorites />}></Route>
-          <Route path='/mycourses' element={<Favorites />}></Route>
+          <Route path='/mycourses' element={<MyCourses />}></Route>
+          <Route path='/jobs' element={<JobListing />}></Route>
           <Route path='/404' element={<Error404 />}></Route>
           <Route path='/500' element={<Error500 />}></Route>
         </Routes>

@@ -3,7 +3,6 @@ a {
 }
 
 .header-container {
-    background-color: transparent;
     color: #555555;
     padding: 1.2vw 12vw;
     width: 100%;
@@ -294,7 +293,6 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1.2vw;
-    background-color: transparent;
 }
 
 /* Styles for path container */
@@ -303,7 +301,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1.2vw;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 
 /* Styles for course video component */
@@ -414,20 +412,78 @@ a {
 
  .page-heading {
     width: 100%;
-    padding: 1% 20%;
-    background-color: #f6f6f6;
- }
+    padding: 0% 12%;
+    background-color: #1f4e79;
+    display: flex;
+    align-items: center;
+    gap: 1.8vw;
+}
  
 .page-heading h3 {
     padding: 1vw 1.2vw;
-    background-color: #1f4e79;
     color: #fafafa;
+    background-color: transparent;
     font-family: 'Jost-SemiBold';
     text-align: left;
     border-radius: 0.2vw;
+}
+.page-link {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.1vw;
+}
+.page-icon {
+    background-color: transparent;
+    color: #fafafa;
+    height: 1vw;
+    width: 1.4vw;
 }
 .badge-span-style {
     font-family: 'Jost-Regular';
     background-color: transparent;
     font-size: 0.85vw;
+}
+
+
+/* Styles for Enrolled Course Card */
+.course-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    font-family: "Jost-Regular";
+    width: 100%;
+    cursor: pointer;
+}
+
+.course-card-image {
+    width: 24%;
+}
+
+.course-card-body {
+    width: 100%;
+    padding: 1.0vw;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-card-body>.course-section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1vw;
+}
+
+.course-card-title {}
+
+.course-card-text {
+    font-family: 'Jost-Regular';
+    font-size: 0.7vw;
+    color: #6a85bd;
+}
+
+.course-card-body>.section-2 {
+    display: flex;
+    justify-content: space-between;
 }

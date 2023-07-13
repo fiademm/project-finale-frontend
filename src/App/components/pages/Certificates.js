@@ -2,6 +2,7 @@ import React from 'react';
 import { LoggedInHeader } from '../Headers';
 import { LoggedInFooter } from '../Footers';
 import { CertificateList } from '../CardsList';
+import PageHeading from '../PageHeading';
 
 const Certificates = () => {
     const certificates = [
@@ -82,9 +83,7 @@ const Certificates = () => {
     return(
         <>
             <LoggedInHeader />
-            <div className='page-heading'>
-                <h3>Certificates</h3>
-            </div>
+            <PageHeading title='Certificates' link='/profiles' />
             <div style={{width:'100%', padding:'1% 20%', backgroundColor:'#f6f6f6', borderRadius:'0.2vw'}}>
                 <CertificateList certificates={certificates} />
             </div>
