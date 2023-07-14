@@ -3,7 +3,8 @@ import { FilledButton, LinkButton } from './Buttons';
 import '../styles/components.css';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { BsChevronRight } from "react-icons/bs";
+import { BsChevronRight, BsStar, BsStarFill, BsFillCircleFill } from "react-icons/bs";
+import Rating from 'react-rating';
 
 const LearningPathCard = ({ title, description, thumbnail, numVideos }) => {
   return (
@@ -23,12 +24,12 @@ const LearningPathCard = ({ title, description, thumbnail, numVideos }) => {
   );
 };
 
-const CourseCard = ({ title, description, thumbnail, numVideos, videos }) => {
+const CourseCard = ({ title, description, thumbnail, numVideos, rating, videos }) => {
     const [showDetails, setShowDetails] = useState(false);
     const navigate = useNavigate();
 
     const handleToggleDetails = () => {
-        navigate('/details', {state: {videos}});
+        navigate('/details', {state: {title, description, thumbnail, numVideos, rating, videos}});
     };
 
     return (
@@ -39,13 +40,22 @@ const CourseCard = ({ title, description, thumbnail, numVideos, videos }) => {
                 <h5 className="course-card-title" style={{fontFamily: 'Jost-SemiBold', fontSize: '0.93vw', color: '#1c1d1f'}}>{title}</h5>
                 <p className="course-card-text" style={{fontFamily: 'Jost-Regular', fontSize: '0.83vw', color: '#1c1d1f'}}>{description}</p>
                 <p style={{fontFamily: 'Jost-Regular', fontSize: '0.74vw', color: '#6a85bd'}}>Dr. Michael Boahene</p>
-                <p>Rating: 4.4</p>
+                <span style={{display: 'flex', gap: '0.3vw', alignItems: 'flex-end', color: '#b6690e', fontFamily: 'Jost-Medium', fontSize: '0.8vw'}}>
+                  {rating}  
+                  <Rating
+                    initialRating={rating}
+                    emptySymbol={<BsStar />}
+                    fullSymbol={<BsStarFill />}
+                    className='course-rating-style'
+                    readonly
+                  />
+                </span>
             </section>
           <section className="course-section-2">
-            <div style={{display: 'flex', flexDirection: 'row', gap: '1vw'}}>
+            <div style={{display: 'flex', flexDirection: 'row', gap: '0.6vw'}}>
               <span className="course-card-text">{numVideos} videos</span>
-              <span className="course-card-text">{numVideos} total hours</span>
-              <span className="course-card-text">{numVideos} lectures</span>
+              <span className="course-card-text"><BsFillCircleFill style={{fontSize: '0.15vw'}} /> {numVideos} total hours</span>
+              <span className="course-card-text"><BsFillCircleFill style={{fontSize: '0.15vw'}} /> {numVideos} lectures</span>
             </div>
           </section>
         </div>

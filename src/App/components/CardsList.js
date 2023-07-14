@@ -28,6 +28,7 @@ const CourseList = ({ courses }) => {
             thumbnail={course.thumbnail}
             numVideos={course.numVideos}
             videos={course.videos}
+            rating={course.rating}
           />
         ))}
       </div>
