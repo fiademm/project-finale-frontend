@@ -10,6 +10,7 @@ const MyCourses = () => {
           description: "Learn the basics of Python programming with this introductory course.",
           thumbnail: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
           numVideos: 10,
+          rating: 4.5,
           videos: [
             "https://www.youtube.com/watch?v=_Z1t7MNk0c4",
             "https://www.youtube.com/watch?v=kqtD5dpn9C8",
@@ -28,6 +29,7 @@ const MyCourses = () => {
           description: "Get started with the React JavaScript library in this introductory course.",
           thumbnail: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
           numVideos: 12,
+          rating: 4.0,
           videos: [
             "https://www.youtube.com/watch?v=Ke90Tje7VS0",
             "https://www.youtube.com/watch?v=-AbaV3nrw6E",
@@ -48,6 +50,7 @@ const MyCourses = () => {
           description: "Learn how to build machine learning models with Python and TensorFlow.",
           thumbnail: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
           numVideos: 15,
+          rating: 4.0,
           videos: [
             "https://www.youtube.com/watch?v=aircAruvnKk",
             "https://www.youtube.com/watch?v=tPYj3fFJGjk",

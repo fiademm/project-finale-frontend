@@ -454,6 +454,8 @@ a {
     font-family: "Jost-Regular";
     width: 100%;
     cursor: pointer;
+    padding: 1vw 0;
+    border-bottom: 0.01vw solid #8185bd;
 }
 
 .course-card-image {
@@ -481,9 +483,46 @@ a {
     font-family: 'Jost-Regular';
     font-size: 0.7vw;
     color: #6a85bd;
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
 }
 
 .course-card-body>.section-2 {
     display: flex;
     justify-content: space-between;
+}
+
+.course-rating-style {
+    color: #e59819;
+    font-size: 0.74vw;
+}
+
+.course-rating-style-2 {
+    font-size: 0.74vw;
+    color: #e59819;
+}
+
+.course-details-container-1 {
+    padding: 2% 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3vw;
+    background-color: #1f4e79;
+    align-items: flex-start;
+    color: #ffffff;
+}
+
+.course-details-container-2 {
+    padding: 2% 20%;
+}
+
+.course-details-container-2-in {
+    border: 0.1vw solid #8185bd;
+    border-radius: 0.1vw;
+    width: 100%;
+    padding: 2% 3%;
+    font-family: 'Jost-Regular';
+    font-size: 0.9vw;
+    text-align: left;
 }
