@@ -95,7 +95,7 @@ a {
 }
 
 .link-button {
-    font-family: "Jost-SemiBold";
+    font-family: "Jost-Medium";
     font-size: 0.83vw;
     background-color: transparent;
     box-shadow: none;
@@ -343,16 +343,16 @@ a {
 }
 
 .course-details-deck>.card {
-    padding: 1vw 8vw;
-    border: 0.1vw solid black;
+    padding: 1vw 2vw;
     border-radius: 0.1vw;
+    border-bottom: 0.01vw solid #8185bd;
 }
 
 .card>.card-body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 1vw;
 }
 
 /* styles for circle component */
@@ -464,7 +464,7 @@ a {
 
 .course-card-body {
     width: 100%;
-    padding: 1.0vw;
+    padding: 0.4vw 1.0vw;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -515,14 +515,22 @@ a {
 
 .course-details-container-2 {
     padding: 2% 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
 }
 
 .course-details-container-2-in {
-    border: 0.1vw solid #8185bd;
+    border: 0.1vw solid #bbb;
     border-radius: 0.1vw;
     width: 100%;
     padding: 2% 3%;
     font-family: 'Jost-Regular';
     font-size: 0.9vw;
     text-align: left;
+}
+
+.certificate-details-modal {
+    display: flex;
+    background-color: rebeccapurple;
 }
