@@ -12,6 +12,8 @@ import LandingPage from './App/components/pages/LandingPage';
 import LearningPaths from './App/components/pages/LearningPaths';
 import Login from './App/components/pages/Login';
 import MyCourses from './App/components/pages/MyCourses';
+import NoBadges from './App/components/pages/NoBadges';
+import NoCertificates from './App/components/pages/NoCertificate';
 import Profile from './App/components/pages/Profile';
 import Register from './App/components/pages/Register';
 import './App/styles/general.css';
@@ -31,7 +33,9 @@ function App() {
           <Route path='/videos' element={<CourseVideo />}></Route>
           <Route path='/profiles' element={<Profile />}></Route>
           <Route path='/badges' element={<Badges />}></Route>
+          <Route path='/nobadges' element={<NoBadges />}></Route>
           <Route path='/certificates' element={<Certificates />}></Route>
+          <Route path='/nocertificates' element={<NoCertificates />}></Route>
           <Route path='/certificate/details' element={<Certificates />}></Route>
           <Route path='/favorites' element={<Favorites />}></Route>
           <Route path='/mycourses' element={<MyCourses />}></Route>

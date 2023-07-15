@@ -28,7 +28,7 @@ const Login = () => {
                                 <input className="textbox" type="password" value={password} onChange={(event) => setPassword(event.target.value)} onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)} style={{background: isFocused ? "transparent" : "transparent", color: isFocused ? "black" : "black",}} />
                             </label>
                         </section>
-                        <Link to='/paths'><FilledButton buttonStyle='filled-button-large' buttonText='Login' /></Link>
+                        <Link to='/courses'><FilledButton buttonStyle='filled-button-large' buttonText='Login' /></Link>
                         <div style={{display: 'flex', flexDirection: 'column', gap: '1.2vw'}}>
                             <hr />
                             <span style={{textAlign: "center"}}>Don't have an account? <LinkButton buttonText='Sign up' buttonLink='/register' /></span>
