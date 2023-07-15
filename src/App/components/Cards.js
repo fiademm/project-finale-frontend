@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { BsChevronRight, BsStar, BsStarFill, BsFillCircleFill } from "react-icons/bs";
 import Rating from 'react-rating';
+import { CertificateDetailsModal, ErrorDetailsModal } from './Modals';
 
 const LearningPathCard = ({ title, description, thumbnail, numVideos }) => {
   return (
@@ -79,14 +80,8 @@ const CourseCard = ({ title, description, thumbnail, numVideos, rating, videos }
                 <h5 className="course-card-title" style={{fontFamily: 'Jost-SemiBold', fontSize: '0.93vw', color: '#1c1d1f'}}>{title}</h5>
                 <p className="course-card-text" style={{fontFamily: 'Jost-Regular', fontSize: '0.83vw', color: '#1c1d1f'}}>{description}</p>
                 <p style={{fontFamily: 'Jost-Regular', fontSize: '0.74vw', color: '#6a85bd'}}>Dr. Michael Boahene</p>
-                <p>Rating: 4.4</p>
             </section>
-          <section className="course-section-2">
-            <div style={{display: 'flex', flexDirection: 'row', gap: '1vw'}}>
-              <span className="course-card-text">{numVideos} videos</span>
-              <span className="course-card-text">{numVideos} total hours</span>
-              <span className="course-card-text">{numVideos} lectures</span>
-            </div>
+          <section style={{display: 'flex', flexDirection: 'column', gap: '0.5vw'}}>
             <LinkButton buttonText='Resume learning >' otherProps={videos} />
           </section>
         </div>
@@ -121,14 +116,27 @@ const TabCard = ({ icon, title, link }) => {
   );
 };  
 
-const CertificateCard = ({ code, title, issuer, date, link }) => {
+const CertificateCard = ({ code, title, issuer, date, image, link }) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  function openDialog() {
+    setModalIsOpen(true);
+  }
+
+  function closeDialog() {
+    setModalIsOpen(false);
+  }    
+
   return (
-    <Link to={link} style={{borderRadius: '0.1vw', display: 'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between', gap: '0.5vw', width:'100%', padding: '1vw 1.2vw', borderRadius: '0.1vw', backgroundColor: '#fafafa', textAlign: 'left'}}>
-        <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '5%'}}>{code}</span>
-        <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '50%'}}>{title}</span>
-        <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '24%'}}>{issuer}</span>
-        <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '12%'}}>{date}</span>
-    </Link>
+    <>
+      <Link to={link} style={{borderRadius: '0.1vw', display: 'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between', gap: '0.5vw', width:'100%', padding: '1vw 1.2vw', borderRadius: '0.1vw', backgroundColor: '#fafafa', textAlign: 'left'}} onClick={openDialog} >
+          <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '5%'}}>{code}</span>
+          <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '50%'}}>{title}</span>
+          <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '24%'}}>{issuer}</span>
+          <span style={{fontFamily: 'Jost-Regular', backgroundColor: 'transparent', fontSize: '0.90vw', width: '12%'}}>{date}</span>
+      </Link>
+        <CertificateDetailsModal isOpen={modalIsOpen} onClose={closeDialog} code={code} title={title} issuer={issuer} date={date} image={image} />
+    </>
   );
 }; 
 

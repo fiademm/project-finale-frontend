@@ -91,6 +91,7 @@ const CourseList = ({ courses }) => {
             title={certificate.title}
             issuer={certificate.issuer}
             date={certificate.date}
+            image={certificate.image}
           />
         ))}
       </div>
