@@ -4,7 +4,7 @@ import { LoggedInHeader } from '../Headers';
 import { LoggedInFooter } from '../Footers';
 import '../../styles/components.css';
 import Rating from 'react-rating';
-import { BsStar, BsStarFill } from 'react-icons/bs';
+import { BsCameraVideo, BsStar, BsStarFill } from 'react-icons/bs';
 
 const CourseDetails = () => {
     const location = useLocation();
@@ -44,16 +44,35 @@ const CourseDetails = () => {
                         Error handling
                         Testing
                 </div>
+                <div className='course-details-container-2-in'>
+                    <h6 style={{fontFamily: 'Jost-SemiBold', fontSize: '1vw'}}>Course outline</h6>
+                    In this course, you will learn the fundamentals of the Python programming language. You will learn about:
+                        The basic syntax of Python
+                        Data types and variables
+                        Operators and expressions
+                        Control flow statements
+                        Functions
+                        Modules
+                        Object-oriented programming
+                        Input and output
+                        Error handling
+                        Testing
+                </div>
             </section>
             <section className="card-deck course-details-deck">
+                <h6 style={{fontFamily: 'Jost-SemiBold', fontSize: '1vw', textAlign: 'left'}}>Course videos</h6>
+                <br />
                 {videos.map((video, index) => (
                 <div key={index} className="card" onClick={() => {
                     handleCardClick(index);
-                    console.log('This is the index ' + index)
                 }}>
                     <div className="card-body">
-                        <h5 className="card-title" style={{textAlign: 'left', fontFamily: 'Jost-Medium', fontSize: '0.83vw'}}>Lesson {index + 1} - Introduction to the rest</h5>
-                        <p className="card-text">{video}</p>
+                        <BsCameraVideo />
+                        <span style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', width: '100%'}}>
+                            <h3 className="card-title" style={{textAlign: 'left', fontFamily: 'Jost-SemiBold', fontSize: '0.83vw'}}>Lesson {index + 1} - Introduction to the rest</h3>
+                            <p className="card-text">{video}</p>
+                            <p className="card-text">5 mins</p>
+                        </span>
                     </div>
                 </div>
                 ))}
