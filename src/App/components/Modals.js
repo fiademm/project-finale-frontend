@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import ReactModal from 'react-modal';
-import { BsXCircleFill } from 'react-icons/bs';
+import { BsAward, BsXCircleFill } from 'react-icons/bs';
 
 const BadgeDetailsModal = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -26,27 +26,31 @@ const BadgeDetailsModal = () => {
     );
 };
 
-const CertificateDetailsModal = () => {
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-
-    const closeModal = () => {
-        setModalIsOpen(false)
-    };
-
+const CertificateDetailsModal = ({ isOpen, onClose, title, image }) => {
     return(
         <>
-            <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
             <ReactModal
-            contentLabel="Error Message"
+            isOpen={isOpen}
+            onRequestClose={onClose}
+            contentLabel="Example Modal"
+            style={{ 
+                content: {
+                    boxSizing: 'border-box',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    padding: '2%',
+                    paddingInline: '18vw',
+                    backgroundColor: '#f0f0f0',
+                    gap: '1vw'
+            }}}
             >
-                <h2>Modal Content</h2>
-                <p>Some text to be displayed in the modal</p>
-                <button onClick={closeModal}>Close Modal</button>
+                <img src={image} alt={title} style={{ width: '100%'}} />
+                <button onClick={onClose} className='outlined-button-1'>Close Modal</button>
             </ReactModal>
         </>
     );
 };
-
 
 // const ErrorDetailsModal = ({ isOpen, onClose }) => {
 //     return (
