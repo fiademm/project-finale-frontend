@@ -1,44 +1,40 @@
   .hero-section {
     padding: 10px 50px;
-    /* Updated padding values */
     position: relative;
     left: 10px;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
   }
 
 
   .hero-title1 {
-    padding-top: 88px;
-    padding: 1px 14px;
+    margin-top: 28px;
+    margin-right: 620px;
     font-size: 48px;
     font-family: 'Cinzel', serif;
-    margin-left: -85px;
     line-height: 1.8;
   }
 
   .hero-title2 {
-    padding-top: 24px;
-    padding: 1px 14px;
+    margin-top: 2px;
+    margin-right: 620px;
     font-size: 48px;
     font-family: 'Cinzel', serif;
-    margin-left: 4px;
   }
 
 
   .hero-subtitle1 {
-    padding-top: 24px;
-    padding: 24px 5px;
+    margin-top: 24px;
+    margin-right: 320px;
     font-size: 17px;
     font-family: 'Jost', sans-serif;
-    margin-left: -20px;
   }
 
 
   .hero-subtitle2 {
-    padding-top: 0px;
-    padding: -5px 14px;
+    margin-top: 14px;
+    margin-right: 620px;
     font-size: 17px;
     font-family: 'Jost', sans-serif;
   }

@@ -1,19 +1,18 @@
 .title {
   text-align: left;
   margin-left: 80px;
-  margin-top: 228px;
+  margin-top: 198px;
   font-family: 'Cinzel', serif;
 }
 
 .description {
-   text-align: left;
+  text-align: left;
   padding: 2px;
   margin-top: 19px;
- margin-left: 75px;
+  margin-left: 75px;
   font-family: 'Jost', sans-serif;
   font-size: 16px;
   line-height: 1.8;
-
 }
 
 .icon-container {
@@ -21,7 +20,7 @@
   justify-content: center;
   align-items: center;
   margin-top: -30px;
-  width: 500px; 
+  width: 500px;
   margin-left: -56px;
 }
 
@@ -29,12 +28,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .column .icon:nth-child(3),
 .column .icon:nth-child(4) {
-  margin-top: 30px; 
+  margin-top: 30px;
   margin-left: -30px;
 }
 
@@ -45,32 +44,40 @@
 
 .icon {
   padding-top: 20px;
-  margin-bottom: 10px; /* Add some spacing between the icons */
-  width: 60px; /* Adjust the width of the icons */
-  height: 60px; /* Adjust the height of the icons */
+  margin-bottom: 10px;
+  /* Add some spacing between the icons */
+  width: 60px;
+  /* Adjust the width of the icons */
+  height: 60px;
+  /* Adjust the height of the icons */
   background-color: #ccc;
 }
 
-.icon-text4{
+.icon-text4 {
   margin-left: 20px;
 }
 
-.icon-text1{
+.icon-text1 {
   margin-right: 6px;
 }
-.icon-text3{
+
+.icon-text3 {
   margin-right: 32px;
 }
-.icon-text2{
+
+.icon-text2 {
   margin-right: 3px;
 }
 
 .boy-image {
-  width: 350px; /* Adjust the width as needed */
-  height: 410px; /* Maintain aspect ratio */
-  object-fit: cover; /* Adjust the image placement within the container */
+  width: 350px;
+  /* Adjust the width as needed */
+  height: 410px;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Adjust the image placement within the container */
   position: absolute;
   top: 200%;
   right: 0;
-  transform: translate(-45%, 53%);
+  transform: translate(-45%, 45%);
 }
