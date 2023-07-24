@@ -1,17 +1,15 @@
-.title {
+.title1 {
   text-align: left;
-  padding-top: -58px;
-  padding-left: 40px; /* Added padding-left */
-  padding-right: 60px; /* Added padding-right */
+  margin-top: 195px;
+  margin-left: 75px;
   font-family: 'Cinzel', serif;
 }
 
-.description {
+.description1 {
   text-align: left;
   padding: 2px;
-  margin-top: -12px;
-  padding-left: 40px; /* Added padding-left */
-  padding-right: 60px; /* Added padding-right */
+  margin-top: 19px;
+  margin-left: 75px;
   font-family: 'Jost', sans-serif;
   font-size: 16px;
   line-height: 1.8;
@@ -20,98 +18,103 @@
 .course-container {
   display: flex;
   justify-content: space-between;
-  margin-top: -50px;
-  padding-left: 60px; /* Added padding-left */
-  padding-right: 60px; /* Added padding-right */
+  margin-top: 10px;
+  padding-left: 55px;
+  padding-right: 60px;
   width: 1000px;
   height: 400px;
 }
 
 
-  .first-container, .second-container {
-    flex-basis: calc(60% - 10px);
-    max-width: 500px;
-    background-color: #ffffff;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-   .stats-image {
-    width: 434px;
-    height: 266.64px;
-    margin-bottom: 20px;
-    margin-right: 22px;
-    padding-top:18px;
-  }
+.first-container,
+.second-container {
+  flex-basis: calc(60% - 10px);
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
-  .course-title {
-    font-size: 16px;
-    text-align: left;
-    margin-left: -28px;
-    margin-top: -10px;
-  }
-  
-  .descriptionOne{
-    margin-top: -50px;
-    font-size: 14px;
-    text-align: left;
-    margin-left: -30px;
-    line-height: 1.8;
-  }
-  .descriptionOne, .descriptionTwo {
-    margin-bottom: 10px;
-  }
-  
+.stats-image {
+  width: 434px;
+  height: 266.64px;
+  margin-bottom: 20px;
+  margin-right: 22px;
+  padding-top: 18px;
+}
 
-  .view-course-button, .view-course-buttonOne {
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 4px;
-  }
+.course-title {
+  font-size: 16px;
+  text-align: left;
+  margin-left: -28px;
+  margin-top: -10px;
+}
 
-  .view-course-button {
-    margin-top: 2px;
-    margin-left: -232px;
-    background-color: black;
-    color: white;
-    border: none;
-    text-align: center;
-    border-radius: 4px;
-    padding: 5px 10px;
-    padding-top: 10px;
-    padding-bottom: 10px; ;
-    width: 113px;
-  }
- 
-  .view-course-buttonOne {
-    margin-top: 2px;
-    margin-left: -320px;
-   background-color: black;
-   color: white;
-   border: none;
-   text-align: center;
-   border-radius: 4px;
-   padding: 5px 10px;
-   padding-top: 10px;
-   padding-bottom: 10px; 
-   width: 113px;
-  }
+.descriptionOne {
+  margin-top: -50px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: -30px;
+  line-height: 1.8;
+}
 
-  .second-container {
-    margin-left: 10px;
-  }
+.descriptionOne,
+.descriptionTwo {
+  margin-bottom: 10px;
+}
 
-  .stats-imageOne {
-    width: 333px;
-    height: 191px;
-    margin-bottom: 20px;
-    margin-left: -100px;
-    padding-top:18px;
-  }
 
-.course-titleOne{
+.view-course-button,
+.view-course-buttonOne {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.view-course-button {
+  margin-top: 2px;
+  margin-left: -232px;
+  background-color: black;
+  color: white;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  ;
+  width: 113px;
+}
+
+.view-course-buttonOne {
+  margin-top: 2px;
+  margin-left: -320px;
+  background-color: black;
+  color: white;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 113px;
+}
+
+.second-container {
+  margin-left: 10px;
+}
+
+.stats-imageOne {
+  width: 333px;
+  height: 191px;
+  margin-bottom: 20px;
+  margin-left: -100px;
+  padding-top: 18px;
+}
+
+.course-titleOne {
   font-size: 16px;
   margin-bottom: 10px;
   text-align: left;
@@ -119,7 +122,7 @@
   margin-top: -10px;
 }
 
-.descriptionTwo{
+.descriptionTwo {
   margin-top: -2px;
   font-size: 14px;
   text-align: left;
@@ -143,4 +146,3 @@
   color: white;
   border: none;
 }
-

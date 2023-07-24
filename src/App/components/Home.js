@@ -4,6 +4,7 @@ import HeroSectionOne from './HeroSectionOne';
 import HeroSectionTwo from './HeroSectionTwo';
 import HeroSectionThree from './HeroSectionThree';
 
+
 function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ function Home() {
    <HeroSectionOne />
    <HeroSectionTwo/>
    <HeroSectionThree />
+  
    </>
   );
 }

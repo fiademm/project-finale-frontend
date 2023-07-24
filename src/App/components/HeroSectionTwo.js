@@ -3,10 +3,10 @@ import './HeroSectionTwo.css'; // Import the CSS file
 import stats from './images/stats.jpg';
 
 function HeroSectionTwo() {
-  return (
-    <div >
-      <h1 className="title">POPULAR COURSES</h1>
-      <p className="description">
+    return (
+      <div>
+      <h1 className="title1">POPULAR COURSES</h1>
+      <p className="description1">
         Education is the process of learning knowledge, strengthening one’s <br />
         decision-making abilities, and getting ready to live a normal life.
       </p>
@@ -40,7 +40,7 @@ function HeroSectionTwo() {
   
 </div>
    </div>
-  );
+    );
 }
 
 export default HeroSectionTwo;

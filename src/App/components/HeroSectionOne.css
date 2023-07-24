@@ -1,0 +1,126 @@
+  .hero-section {
+    padding: 10px 50px;
+    /* Updated padding values */
+    position: relative;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .hero-title1 {
+    padding-top: 88px;
+    padding: 1px 14px;
+    font-size: 48px;
+    font-family: 'Cinzel', serif;
+    margin-left: -85px;
+    line-height: 1.8;
+  }
+
+  .hero-title2 {
+    padding-top: 24px;
+    padding: 1px 14px;
+    font-size: 48px;
+    font-family: 'Cinzel', serif;
+    margin-left: 4px;
+  }
+
+
+  .hero-subtitle1 {
+    padding-top: 24px;
+    padding: 24px 5px;
+    font-size: 17px;
+    font-family: 'Jost', sans-serif;
+    margin-left: -20px;
+  }
+
+
+  .hero-subtitle2 {
+    padding-top: 0px;
+    padding: -5px 14px;
+    font-size: 17px;
+    font-family: 'Jost', sans-serif;
+  }
+
+  .hero-buttons {
+    padding-top: 56px;
+  }
+
+  .hero-button {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+
+  .hero-button-start {
+    margin-left: -140px;
+    padding: 15px 21px;
+    font-size: 18px;
+  }
+
+  .hero-button-browse {
+    padding: 15px 20px;
+    background-color: #fff;
+    color: #333333;
+    border: 1px solid #333333;
+    font-size: 18px;
+  }
+
+  .hero-button-browse:hover {
+    border-bottom: 1px solid #FFD700;
+  }
+
+  .hero-image {
+    width: 450.47px;
+    height: 352.91px;
+    object-fit: cover;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    transform: translate(-15%, -52%);
+  }
+
+  .course-details {
+    margin-top: -4px;
+    margin-right: 849px;
+    margin-left: 30px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 300px;
+    font-size: 8px;
+  }
+
+  .course-title {
+    font-size: 12px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .description {
+    font-size: 12px;
+    margin-bottom: 60px;
+
+    text-align: left;
+  }
+
+  .hero-button-browse:hover {
+    border: 1px solid #FFD700;
+    background-color: #FFD700;
+  }
+
+  .course-details:hover .course-title,
+  .course-details:hover .description {
+    margin-bottom: 60px;
+  }
+
+  .hero-button-start:hover {
+    background-color: #333333;
+    color: white;
+    border: none;
+    color: #FFD700;
+  }
