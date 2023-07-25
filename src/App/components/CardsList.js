@@ -1,5 +1,5 @@
 import React from 'react';
-import { BadgeCard, CertificateCard, CourseCard, EnrolledCourseCard, LearningPathCard, LinkCard, TabCard } from './Cards';
+import { BadgeCard, CertificateCard, CourseCard, EnrolledCourseCard, EventCard, InstructorCard, JobCard, LearningPathCard, LinkCard, TabCard, TipCard } from './Cards';
 
 const LearningPathList = ({ learningPaths }) => {
   return (
@@ -48,6 +48,83 @@ const CourseList = ({ courses }) => {
             videos={enrolledCourse.videos}
           />
         ))}
+      </div>
+    );
+  };
+
+  const JobsList = ({ jobs }) => {
+    return (
+      <div className="card-deck">
+        {jobs.map(job => (
+          <JobCard
+            key={job.id}
+            company={job.company}
+            position={job.position}
+            briefDescription={job.briefDescription}
+            jobType={job.jobType}
+            location={job.location}
+            salary={job.salary}
+            postedOn={job.postedOn}
+            description={job.description}
+          />
+        ))}
+      </div>
+    );
+  };
+
+  const EventsList = ({ events }) => {
+    return (
+      <div className="card-deck">
+        {events.map(event => (
+          <EventCard
+            key={event.id}
+            company={event.company}
+            title={event.title}
+            date={event.date}
+            time={event.time}
+            briefDescription={event.briefDescription}
+            link={event.link}
+            otherDetails={event.otherDetails}
+            location={event.location}
+            duration={event.duration}
+          />
+        ))}
+      </div>
+    );
+  };
+
+  const TipsList = ({ tips }) => {
+    return (
+      <div className="card-deck">
+        {tips.map(tip => (
+          <TipCard
+            key={tip.id}
+            id={tip.id}
+            title={tip.title}
+            content={tip.content}
+          />
+        ))}
+      </div>
+    );
+  };
+
+  const InstructorList = ({ instructors }) => {
+    return (
+      <div className="card-deck">
+        {instructors.map(instructor => (
+          <InstructorCard
+            key={instructor.emailAddress}
+            thumbnail={instructor.thumbnail}
+            name={instructor.name}
+            emailAddress={instructor.emailAddress}
+            phoneNumber={instructor.phoneNumber}
+            role={instructor.role}
+            description={instructor.description}
+            location={instructor.location}
+            linkedin={instructor.linkedin}
+            course={instructor.course}
+            />
+            ))}
       </div>
     );
   };
@@ -115,4 +192,4 @@ const CourseList = ({ courses }) => {
     );
   };
 
-export { LearningPathList, CourseList, EnrolledCourseList, LinksList, TabsList, CertificateList, BadgeList };
+export { LearningPathList, CourseList, EnrolledCourseList, JobsList, EventsList, TipsList, InstructorList, LinksList, TabsList, CertificateList, BadgeList };
