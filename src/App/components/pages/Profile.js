@@ -4,32 +4,43 @@ import { LoggedInHeader } from '../Headers';
 import { LoggedInFooter } from '../Footers';
 import '../../styles/components.css';
 import { LinksList } from '../CardsList';
-import { BsAward, BsBookmark, BsPlayBtn, BsTrophy } from "react-icons/bs";
+import { Bs123, BsAward, BsBookmark, BsBookmarkPlus, BsBoxArrowLeft, BsMortarboard, BsPlayBtn, BsTrophy } from "react-icons/bs";
 
 const Profile = () => {
     const nameOfUser = 'Otchere Fia Israel';
     const emailAddress = 'fiademm1@gmail.com';
+    const xp = 122;
 
     const links = [
         {
-            icon: BsTrophy,
-            title: 'Achievements',
+            icon: BsAward,
+            title: 'Badges',
             link: '/badges'
         },
         {
-            icon: BsAward,
+            icon: BsMortarboard,
             title: 'Certificates',
             link: '/certificates'
         },
         {
-            icon: BsBookmark,
+            icon: BsBookmarkPlus,
             title: 'Favorites',
             link: '/favorites'
+        },
+        {
+            icon: Bs123,
+            title: 'Leaderboards',
+            link: '/leaderboards'
         },
         {
             icon: BsPlayBtn,
             title: 'My courses',
             link: '/mycourses'
+        },
+        {
+            icon: BsBoxArrowLeft,
+            title: 'Logout',
+            link: '/'
         }
     ]
 
@@ -41,6 +52,7 @@ const Profile = () => {
                 <section>
                     <p style={{fontFamily: 'Jost-Medium', fontSize: '1.1vw'}}>{nameOfUser}</p>
                     <p style={{fontSize: '0.83vw'}}>{emailAddress}</p>
+                    <p style={{fontSize: '0.83vw'}}>{xp} XP</p>
                 </section>
                 <LinksList links={links} />
             </div>
