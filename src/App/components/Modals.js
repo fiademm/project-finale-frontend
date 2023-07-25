@@ -32,7 +32,7 @@ const CertificateDetailsModal = ({ isOpen, onClose, title, image }) => {
             <ReactModal
             isOpen={isOpen}
             onRequestClose={onClose}
-            contentLabel="Example Modal"
+            contentLabel="Certificate Modal"
             style={{ 
                 content: {
                     boxSizing: 'border-box',
@@ -46,6 +46,58 @@ const CertificateDetailsModal = ({ isOpen, onClose, title, image }) => {
             }}}
             >
                 <img src={image} alt={title} style={{ width: '100%'}} />
+                <button onClick={onClose} className='outlined-button-1'>Close Modal</button>
+            </ReactModal>
+        </>
+    );
+};
+
+const InstructorDetailsModal = ({ isOpen, onClose, title, image }) => {
+    return(
+        <>
+            <ReactModal
+            isOpen={isOpen}
+            onRequestClose={onClose}
+            contentLabel="Instructor Modal"
+            style={{ 
+                content: {
+                    boxSizing: 'border-box',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    padding: '2%',
+                    paddingInline: '18vw',
+                    backgroundColor: '#f0f0f0',
+                    gap: '1vw'
+            }}}
+            >
+                <img src={image} alt={title} style={{ width: '100%'}} />
+                <button onClick={onClose} className='outlined-button-1'>Close Modal</button>
+            </ReactModal>
+        </>
+    );
+};
+
+const JobDetailsModal = ({ isOpen, onClose, industry, company, position, briefDescription, jobType, location, salary, postedOn, years, description }) => {
+    return(
+        <>
+            <ReactModal
+            isOpen={isOpen}
+            onRequestClose={onClose}
+            contentLabel="Instructor Modal"
+            style={{ 
+                content: {
+                    boxSizing: 'border-box',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    padding: '2%',
+                    paddingInline: '18vw',
+                    backgroundColor: '#f0f0f0',
+                    gap: '1vw'
+            }}}
+            >
+                <span>{industry}</span>
                 <button onClick={onClose} className='outlined-button-1'>Close Modal</button>
             </ReactModal>
         </>
@@ -166,4 +218,4 @@ const FailedQuizResultsModal = () => {
     );
 };
 
-export { BadgeDetailsModal, CertificateDetailsModal, ErrorDetailsModal, AcknowledgementDetailsModal, PassedQuizResultsModal, FailedQuizResultsModal };
+export { BadgeDetailsModal, CertificateDetailsModal, InstructorDetailsModal, JobDetailsModal, ErrorDetailsModal, AcknowledgementDetailsModal, PassedQuizResultsModal, FailedQuizResultsModal };
