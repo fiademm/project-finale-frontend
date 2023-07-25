@@ -2,6 +2,8 @@ import React from 'react';
 import { LoggedInFooter } from '../Footers';
 import { LoggedInHeader } from '../Headers';
 import { CourseList, EnrolledCourseList } from '../CardsList';
+import { Link } from 'react-router-dom';
+import { BsChevronLeft } from 'react-icons/bs';
 
 const MyCourses = () => {
     const enrolledCourses = [
@@ -31,8 +33,11 @@ const MyCourses = () => {
     return(
         <>
             <LoggedInHeader />
+            <div className='page-heading'>
+                <Link to='/profiles' className='page-link'><BsChevronLeft className='page-icon' /> <span style={{fontFamily: 'Jost-Medium', backgroundColor: 'transparent', color: '#fafafa', fontSize: '0.7vw'}}>Back to profiles</span></Link>
+                <h3>Enrolled courses</h3>
+            </div>
             <section className='list-component-container'>
-              <h2 style={{textAlign: 'left', background: 'none', fontFamily: 'Jost-SemiBold', display: 'flex', flexDirection: 'column', gap: '0.5vw'}}>My learning <hr /></h2>
               <EnrolledCourseList enrolledCourses={enrolledCourses} />
             </section>
             <LoggedInFooter />
