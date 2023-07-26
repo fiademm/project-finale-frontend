@@ -1,49 +1,221 @@
-import React, { useState } from 'react';
-import { Modal } from 'react-overlays';
+import React from 'react';
+import { useState } from 'react';
+import ReactModal from 'react-modal';
+import { BsAward, BsXCircleFill } from 'react-icons/bs';
 
-const CustomModal = ({isOpen, onClose, modalText, modalTitle}) => {
+const BadgeDetailsModal = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const closeModal = () => {
+        setModalIsOpen(false)
+    };
+
     return(
-        <div style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            zIndex: 1000,
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            display: isOpen ? "block" : "none",
-          }}>
-            <div style={{ padding: '10px'}}>
-                <h2>{modalTitle}</h2>
-                <p>{modalText}</p>
-                <button onClick={onClose}>Close</button>
-            </div>
-        </div>
+        <>
+            <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
+            <ReactModal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            contentLabel="Example Modal"
+            >
+                <h2>Modal Content</h2>
+                <p>Some text to be displayed in the modal</p>
+                <button onClick={closeModal}>Close Modal</button>
+            </ReactModal>
+        </>
     );
 };
 
-const Overlay = () => {
-    const [isOpen, setIsOpen] = useState(false);
+const CertificateDetailsModal = ({ isOpen, onClose, title, image }) => {
+    return(
+        <>
+            <ReactModal
+            isOpen={isOpen}
+            onRequestClose={onClose}
+            contentLabel="Certificate Modal"
+            style={{ 
+                content: {
+                    boxSizing: 'border-box',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    padding: '2%',
+                    paddingInline: '18vw',
+                    backgroundColor: '#f0f0f0',
+                    gap: '1vw'
+            }}}
+            >
+                <img src={image} alt={title} style={{ width: '100%'}} />
+                <button onClick={onClose} className='outlined-button-1'>Close Modal</button>
+            </ReactModal>
+        </>
+    );
+};
 
-    const handleOpen = () => {
-        setIsOpen(true);
-    };
+const InstructorDetailsModal = ({ isOpen, onClose, title, image }) => {
+    return(
+        <>
+            <ReactModal
+            isOpen={isOpen}
+            onRequestClose={onClose}
+            contentLabel="Instructor Modal"
+            style={{ 
+                content: {
+                    boxSizing: 'border-box',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    padding: '2%',
+                    paddingInline: '18vw',
+                    backgroundColor: '#f0f0f0',
+                    gap: '1vw'
+            }}}
+            >
+                <img src={image} alt={title} style={{ width: '100%'}} />
+                <button onClick={onClose} className='outlined-button-1'>Close Modal</button>
+            </ReactModal>
+        </>
+    );
+};
 
-    const handleClose = () => {
-        setIsOpen(false);
+const JobDetailsModal = ({ isOpen, onClose, industry, company, position, briefDescription, jobType, location, salary, postedOn, years, description }) => {
+    return(
+        <>
+            <ReactModal
+            isOpen={isOpen}
+            onRequestClose={onClose}
+            contentLabel="Instructor Modal"
+            style={{ 
+                content: {
+                    boxSizing: 'border-box',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    padding: '2%',
+                    paddingInline: '18vw',
+                    backgroundColor: '#f0f0f0',
+                    gap: '1vw'
+            }}}
+            >
+                <span>{industry}</span>
+                <button onClick={onClose} className='outlined-button-1'>Close Modal</button>
+            </ReactModal>
+        </>
+    );
+};
+
+// const ErrorDetailsModal = ({ isOpen, onClose }) => {
+//     return (
+//         <ReactModal isOpen={isOpen} onRequestClose={onClose} contentLabel="Dialog Box" className="modal" overlayClassName="overlay" 
+//             style={{
+//                 overlay: {
+//                 backgroundColor: 'rgba(0, 0, 0, 0.5)',
+//                 zIndex: 1000,
+//                 },
+//                 content: {
+//                 position: 'absolute',
+//                 top: '50%',
+//                 left: '50%',
+//                 transform: 'translate(-50%, -50%)',
+//                 maxWidth: '500px',
+//                 width: '100%',
+//                 padding: '20px',
+//                 borderRadius: '5px',
+//                 boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',
+//                 },
+//           }}>
+//             <BsXCircleFill />
+//             <h2>Error Message</h2>
+//             <p>Dialog box content goes here.</p>
+//             <button onClick={onClose}>Close</button>
+//         </ReactModal>
+//       );
+// };
+
+const ErrorDetailsModal = ({ isOpen, onClose}) => {
+    return(
+        <>
+            <ReactModal
+            isOpen={isOpen}
+            onRequestClose={onClose}
+            contentLabel="Example Modal"
+            >
+                <BsXCircleFill />
+                <h2>Error Message</h2>
+                <p>Some text to be displayed in the modal</p>
+                <button onClick={onClose}>Close Modal</button>
+            </ReactModal>
+        </>
+    );
+};
+
+const AcknowledgementDetailsModal = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const closeModal = () => {
+        setModalIsOpen(false)
     };
 
     return(
-        <div>
-            <button onClick={handleOpen}>Open Overlay</button>
-            {isOpen && <Modal isOpen={isOpen} onClose={handleClose}>
-            <div>
-                <h2>This is an overlay</h2>
-                <p>You can close it by clicking anywhere on the screen outside of this box.</p>
-            </div>
-            </ Modal>}
-       </div>
+        <>
+            <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
+            <ReactModal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            contentLabel="Example Modal"
+            >
+                <h2>Modal Content</h2>
+                <p>Some text to be displayed in the modal</p>
+                <button onClick={closeModal}>Close Modal</button>
+            </ReactModal>
+        </>
     );
-}
+};
 
-export { CustomModal, Overlay };
+const PassedQuizResultsModal = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const closeModal = () => {
+        setModalIsOpen(false)
+    };
+
+    return(
+        <>
+            <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
+            <ReactModal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            contentLabel="Example Modal"
+            >
+                <h2>Modal Content</h2>
+                <p>Some text to be displayed in the modal</p>
+                <button onClick={closeModal}>Close Modal</button>
+            </ReactModal>
+        </>
+    );
+};
+
+const FailedQuizResultsModal = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const closeModal = () => {
+        setModalIsOpen(false)
+    };
+
+    return(
+        <>
+            <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
+            <ReactModal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            contentLabel="Example Modal"
+            >
+                <h2>Modal Content</h2>
+                <p>Some text to be displayed in the modal</p>
+                <button onClick={closeModal}>Close Modal</button>
+            </ReactModal>
+        </>
+    );
+};
+
+export { BadgeDetailsModal, CertificateDetailsModal, InstructorDetailsModal, JobDetailsModal, ErrorDetailsModal, AcknowledgementDetailsModal, PassedQuizResultsModal, FailedQuizResultsModal };

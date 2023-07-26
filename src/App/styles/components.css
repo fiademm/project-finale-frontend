@@ -3,12 +3,11 @@ a {
 }
 
 .header-container {
-    background-color: transparent;
     color: #555555;
     padding: 1.2vw 12vw;
     width: 100%;
-    font-family: 'Jost-Regular';
-    font-size: 0.83vw;
+    font-family: "Jost-Medium";
+    font-size: 0.9vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +17,7 @@ a {
 .logo {
     color: #0072c6;
     color: #1f4e79;
-    font-family: 'Jost-ExtraBold';
+    font-family: "Jost-ExtraBold";
     font-size: 1.4vw;
 }
 
@@ -34,7 +33,7 @@ a {
     align-items: center;
     background-color: #1f4e79;
     color: #fafafa;
-    font-family: 'Jost-Bold';
+    font-family: "Jost-Bold";
     border-radius: 50%;
     overflow: hidden;
 }
@@ -44,39 +43,38 @@ a {
     color: #555555;
     padding: 1.2vw 0;
     width: 100%;
-    font-family: 'Jost-Regular';
+    font-family: "Jost-Regular";
     font-size: 0.83vw;
 }
 
+/* Styles for buttons component */
 .filled-button {
     box-shadow: none;
     border-color: transparent;
-    font-family: 'Jost-SemiBold';
+    font-family: "Jost-SemiBold";
     background-color: #1f4e79;
     padding: 0.7vw 3vw;
     border-radius: 0.16vw;
     color: #fafafa;
     font-size: 0.83vw;
     width: 100%;
-    height: 100%;
 }
 
-.filled-button-1 {
+.filled-button-large {
     box-shadow: none;
     border-color: transparent;
-    font-family: 'Jost-Medium';
+    font-family: "Jost-SemiBold";
     background-color: #1f4e79;
-    padding: 0.4vw 1.2vw;
-    border-radius: 0.2vw;
+    padding: 0.7vw 3vw;
+    border-radius: 0.16vw;
     color: #fafafa;
-    font-size: 0.76vw;
+    font-size: 0.83vw;
     width: 100%;
-    height: 100%;
 }
 
 .outlined-button {
     background-color: transparent;
-    font-family: 'Jost-SemiBold';
+    font-family: "Jost-SemiBold";
     border-color: #1f4e79;
     padding: 0.6vw 3vw;
     border-radius: 0.16vw;
@@ -87,7 +85,7 @@ a {
 
 .outlined-button-1 {
     background-color: transparent;
-    font-family: 'Jost-Medium';
+    font-family: "Jost-Medium";
     border-color: #1f4e79;
     padding: 0.6vw 3vw;
     border-radius: 0.16vw;
@@ -97,7 +95,7 @@ a {
 }
 
 .link-button {
-    font-family: 'Jost-SemiBold';
+    font-family: "Jost-Medium";
     font-size: 0.83vw;
     background-color: transparent;
     box-shadow: none;
@@ -120,18 +118,20 @@ a {
     align-items: center;
     justify-content: center;
     transition-duration: 0.2s;
-    font-family: 'Jost-Medium';
+    font-family: "Jost-Medium";
     font-size: 0.96vw;
     border: none;
     cursor: pointer;
-    border-bottom: 0.10vw solid #ccc;
+    border-bottom: 0.1vw solid #ccc;
 }
 
-.tab-button:hover, .active-tab-button:hover {
+.tab-button:hover,
+.active-tab-button:hover {
     color: #1f4e79;
 }
 
-.tab-button:visited, .active-tab-button:visited {
+.tab-button:visited,
+.active-tab-button:visited {
     color: #1f4e79;
 }
 
@@ -144,13 +144,14 @@ a {
     align-items: center;
     justify-content: center;
     transition-duration: 0.2s;
-    font-family: 'Jost-Medium';
+    font-family: "Jost-Medium";
     font-size: 0.96vw;
     border: none;
     cursor: pointer;
-    border-bottom: 0.18vw solid #172D42;
+    border-bottom: 0.18vw solid #172d42;
 }
 
+/* Styles for error components */
 .error-component-container {
     height: 100vh;
     display: flex;
@@ -171,41 +172,9 @@ a {
     height: 36vw;
 }
 
-.lecture-video-component-container {
-    width: 100%;
-    padding: 1.2vw 12vw;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2vw;
-}
-
-.lecture-video-component-title {
-    font-family: 'Jost-Medium';
-    font-size: 1.1vw;
-    text-align: left;
-    color: #333;
-}
-
-.lecture-title-underline {
-    width: 4vw;
-    border: 0.1vw solid #555555;
-    border-radius: 3vw;
-}
-
-.lecture-video {
-    width: 100%;
-    border-radius: 0.26vw;
-}
-
-.lecture-video-component-navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/* styles for login component */
+/* styles for login & signup components */
 .login-component-container {
-    font-family: 'Jost-Regular';
+    font-family: "Jost-Regular";
     background-image: linear-gradient(to right, #6190e8, #a7bfe888);
     width: 100%;
     height: 100vh;
@@ -231,7 +200,7 @@ a {
     box-sizing: border-box;
 }
 
-.illustration-container > img {
+.illustration-container>img {
     width: 100%;
     height: 100%;
 }
@@ -242,13 +211,13 @@ a {
     background-color: #a7bfe888;
 }
 
-.form-container > form > .title {
-    font-family: 'Jost-Bold';
+.form-container>form>.title {
+    font-family: "Jost-Bold";
     text-align: center;
     font-size: 1.6vw;
 }
 
-.form-container > form {
+.form-container>form {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -263,7 +232,7 @@ a {
     gap: 1.6vw;
 }
 
-.textboxes > label {
+.textboxes>label {
     display: flex;
     flex-direction: column;
     gap: 0.4vw;
@@ -273,82 +242,426 @@ a {
     width: 100%;
     height: 2.8vw;
     padding: 0 1vw;
-    font-family: 'Jost-Regular';
+    font-family: "Jost-Regular";
     font-size: 0.83vw;
     box-shadow: none;
 }
 
-/* styles for available courses component */
-.component-container {
-    padding: 1.2vw 16vw;
-}
-
-.courses-component-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6vw;
-}
-
-.courses-display {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6vw;
-}
-
-/* styles for course card component */
-.course-card-container {
-    border: 0.16vw solid #e0e0e0;
+/* Styles for Learning Path Card */
+.path-card {
     border-radius: 0.4vw;
-    width: 100%;
-    height: 14vw;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    gap: 3vw;
+    font-family: "Jost-Regular";
+    border: 0.1vw solid #ccc;
+    width: 100%;
 }
 
-.course-image-container {
-    height: 100%;
+.path-card-image {
+    width: 30%;
+    border-radius: 0.4vw;
 }
 
-.course-image {
-    width: 20vw;
-    height: 100%
-}
-
-.course-info {
+.path-card-body {
+    width: 100%;
+    padding: 1.6vw 2.4vw;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.4vw 0;
+    border-radius: 0.4vw;
 }
 
-.title-and-description {
+.path-card-body>.section-1 {
     display: flex;
     flex-direction: column;
-    text-align: left;
 }
 
-.title-and-description > .course-title {
-    font-family: 'Jost-Medium';
+.path-card-title {
+    font-family: "Jost-SemiBold";
     font-size: 1.1vw;
 }
 
-.title-and-description > .course-description {
-    font-family: 'Jost-Regular';
-    font-size: 0.83vw;
+.path-card-body>.section-2 {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* .div-two {
+/* Styles for Learning Path List */
+.card-deck {
     display: flex;
     flex-direction: column;
-} */
-
-.before-enrolled-buttons {
-    width: fit-content;
+    gap: 1.2vw;
 }
 
-.after-enrolled-buttons {
-    width: fit-content;
+/* Styles for path container */
+.list-component-container {
+    padding: 2% 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    background-color: #ffffff;
+}
+
+/* Styles for course video component */
+.video-player-container {
+    padding: 1.2vw 12vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.video-navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Jost-Medium';
+}
+
+/* Styles for progress bar */
+.progress-bar-container {
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    transition: width 0.1s ease-in-out;
+}
+
+/* styles for course details component */
+.course-details-deck {
+    padding: 2% 20%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 0.4vw;
+    font-family: 'Jost-Regular';
+}
+
+.course-details-deck>.card {
+    padding: 1vw 2vw;
+    border-radius: 0.1vw;
+    border-bottom: 0.01vw solid #8185bd;
+}
+
+.card>.card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+/* styles for circle component */
+.circle {
+    width: 11vw;
+    height: 11vw;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* styles for profile component */
+.component-container {
+    padding: 2% 20%;
+    font-family: 'Jost-Regular';
+    font-size: 0.93vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+
+/* styles for link card */
+.links-card-deck {
+    width: 100%;
+}
+
+.link-card {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 1.4vw 2vw;
+}
+
+.link-card-body {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+    justify-content: flex-start;
+}
+ /* styles for icons */
+ .icon-style {
+    height: 2vw;
+    width: 1.2vw;
+ }
+
+ .tab-icon-style {
+    height: 1vw;
+    width: 1vw;
+ }
+
+ .page-heading {
+    width: 100%;
+    padding: 0% 12%;
+    background-color: #1f4e79;
+    display: flex;
+    align-items: center;
+    gap: 1.8vw;
+}
+ 
+.page-heading h3 {
+    padding: 1vw 1.2vw;
+    color: #fafafa;
+    background-color: transparent;
+    font-family: 'Jost-SemiBold';
+    text-align: left;
+    border-radius: 0.2vw;
+}
+.page-link {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.1vw;
+}
+.page-icon {
+    background-color: transparent;
+    color: #fafafa;
+    height: 1vw;
+    width: 1.4vw;
+}
+.badge-span-style {
+    font-family: 'Jost-Regular';
+    background-color: transparent;
+    font-size: 0.85vw;
+}
+
+
+/* Styles for Enrolled Course Card */
+.course-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    font-family: "Jost-Regular";
+    width: 100%;
+    cursor: pointer;
+    padding: 1vw 0;
+    border-bottom: 0.01vw solid #8185bd;
+}
+
+.course-card-image {
+    width: 24%;
+}
+
+.course-card-body {
+    width: 100%;
+    padding: 0.4vw 1.0vw;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-card-body>.course-section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1vw;
+}
+
+.course-card-title {}
+
+.course-card-text {
+    font-family: 'Jost-Regular';
+    font-size: 0.7vw;
+    color: #6a85bd;
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+}
+
+.course-card-body>.section-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-rating-style {
+    color: #e59819;
+    font-size: 0.74vw;
+}
+
+.course-rating-style-2 {
+    font-size: 0.74vw;
+    color: #e59819;
+}
+
+.course-details-container-1 {
+    padding: 2% 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3vw;
+    background-color: #1f4e79;
+    align-items: flex-start;
+    color: #ffffff;
+}
+
+.course-details-container-2 {
+    padding: 2% 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.course-details-container-2-in {
+    border: 0.1vw solid #bbb;
+    border-radius: 0.1vw;
+    width: 100%;
+    padding: 2% 3%;
+    font-family: 'Jost-Regular';
+    font-size: 0.9vw;
+    text-align: left;
+}
+
+.certificate-details-modal {
+    display: flex;
+    background-color: rebeccapurple;
+}
+
+/* Styles for Admin Components */
+.admin-component-container {
+    height: 100vh;
+    font-family: 'Jost-Regular';
+}
+
+.admin-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 91.5%;
+}
+
+.sidebar {
+    height: 100%;
+    width: 16%;
+    background-color: #eee;
+}
+
+.main-screen {
+    width: 84%;
+}
+
+.sidebar-buttons-container {
+    background-color: transparent;
+}
+
+.sidebar-button {
+    font-family: 'Jost-Medium';
+    font-size: 0.9vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    padding: 1vw 3vw;
+    background-color: transparent;
+}
+
+.active-sidebar-button {
+    font-family: 'Jost-Medium';
+    font-size: 0.9vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    color: #0072c6;
+    border-left: 0.3vw solid #0072c6;
+}
+
+.default-footer-container {
+    padding: 2vw 12vw;
+    font-family: 'Jost-Regular';
+    display: flex;
+    flex-direction: column;
+    gap: 1.8vw;
+    text-align: left;
+}
+
+.home-container {}
+
+.button-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.home-button-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10vw;
+    color: #555555;
+    padding: 1.2vw 12vw;
+    width: 100%;
+    font-family: "Jost-Medium";
+    font-size: 0.9vw;
+    align-items: center;
+    text-align: left;
+}
+
+.header-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    width: 50%;
+    font-family: 'Jost-Regular';
+    font-size: 1.2vw;
+}
+
+.header-content-buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 1.8vw 0;
+    gap: 0.2vw;
+}
+
+.home-container-1, .home-container-2, .home-container-3, .home-container-4, .home-container-5 {
+    padding: 0vw 12vw; 
+    font-family: 'Jost-Regular';  
+}
+
+.home-container-1, .home-container-4, .home-container-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10vw;
+    color: #555555;
+    padding: 1.2vw 12vw;
+    width: 100%;
+    font-size: 1.1vw;
+    align-items: center;
+    text-align: left;
+}
+
+.review-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-links {
     display: flex;
     flex-direction: row;
     gap: 1vw;

@@ -30,10 +30,18 @@
     font-family: 'Lacquer';
     src: local('Lacquer'), url(../fonts/Lacquer-Regular.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'CinzelBold';
+    src: local('Cinzel'), url(../fonts/CinzelBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'CinzelRegular';
+    src: local('Cinzel'), url(../fonts/CinzelRegular.ttf) format('truetype');
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fcfcfc;
+    background-color: #ffffff;
 }

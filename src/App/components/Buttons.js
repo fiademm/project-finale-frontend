@@ -3,28 +3,14 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 const FilledButton = (props) => {
     return(
-        <>
-            <Link to={props.buttonLink}>
-                <button className='filled-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
-            </Link>
-        </>
+        <button className={props.buttonStyle ? props.buttonStyle : 'filled-button'} onClick={props.buttonOnClick}>{props.buttonText}</button>
     );
-}
-
-const FilledButton1 = (props) => {
-  return(
-      <>
-          <Link to={props.buttonLink}>
-              <button className='filled-button-1' onClick={props.buttonOnClick}>{props.buttonText}</button>
-          </Link>
-      </>
-  );
 }
 
 const OutlinedButton = (props) => {
     return(
         <>
-            <button className='outlined-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
+            <button className={props.buttonStyle ? props.buttonStyle : 'outlined-button'} onClick={props.buttonOnClick}>{props.buttonText}</button>
         </>
     );
 }
@@ -32,18 +18,18 @@ const OutlinedButton = (props) => {
 const OutlinedButton1 = (props) => {
   return(
       <>
+        <Link to={props.buttonLink}>
           <button className='outlined-button-1' onClick={props.buttonOnClick}>{props.buttonText}</button>
+        </Link>
       </>
   );
 }
 
 const LinkButton = (props) => {
     return(
-        <>
-            <Link to={props.buttonLink}>
-                <button className='link-button' onClick={props.buttonOnClick}>{props.buttonText}</button>
-            </Link>
-        </>
+      <Link to={props.buttonLink}>
+        <button className={props.buttonStyle ? props.buttonStyle : 'link-button'} onClick={props.buttonOnClick}>{props.buttonText}</button>
+      </Link>
     );
 }
 
@@ -67,4 +53,4 @@ const TabButton = (props) => {
     );
   }
 
-export { FilledButton, FilledButton1, OutlinedButton, OutlinedButton1, LinkButton, TabButton, ActiveTabButton }
+export { FilledButton, OutlinedButton, LinkButton, TabButton, ActiveTabButton }

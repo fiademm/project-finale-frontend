@@ -11,12 +11,12 @@ const DesignPath = () => {
     useEffect(() => {
         const fetchCourses = async () => {
             try {
-                const response = await axios.get('/courses', {
+                const response = await axios.get('/courses/', {
                     headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
                 });
                 setCourses(response.data);
             } catch (error) {
-                console.error(error);
+                console.error(error + "There has been a change");
             }
         };
         fetchCourses();
