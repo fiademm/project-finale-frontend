@@ -6,6 +6,7 @@ import ASettings from './App/components/Admin/ASettings';
 import AStudents from './App/components/Admin/AStudents';
 import Dashboard from './App/components/Admin/Dashboard';
 import Chat from './App/components/Chat';
+import CourseQuiz from './App/components/CourseQuiz';
 import News from './App/components/News';
 import QuizComponent from './App/components/QuizComponent';
 import ResumeTips from './App/components/ResumeTips';
